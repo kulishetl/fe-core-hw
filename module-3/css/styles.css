@@ -1,0 +1,29 @@
+html {
+    background-color: grey;
+}
+
+body {
+    padding-top: 50px;
+}
+
+.wrapper {
+    width: 480px;
+    margin: auto;
+    background-color: white;
+    padding-left: 37px;
+    padding-right: 37px;
+}
+
+.header {
+    display: inline-block;
+    
+}
+
+ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul {
+    list-style: none;
+}
