@@ -3,15 +3,26 @@ html {
 }
 
 body {
-    padding-top: 50px;
+    padding-top: 300px;
+    padding-bottom: 650px;
+    margin: 0;
+    background: url("../img/sea.jpg") no-repeat;
+    background-size: cover;
 }
 
 .wrapper {
-    width: 480px;
+    width: 468px;
     margin: auto;
     background-color: white;
+    padding-top: 50px;
     padding-left: 37px;
     padding-right: 37px;
+}
+
+h2 {
+    font-family: "Pathway Gotic One Book", serif;
+    font-size: 25px;
+    color: #263555;
 }
 
 .header {
@@ -19,11 +30,37 @@ body {
     
 }
 
+.heading {
+    font-weight: bold;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    color: #263555;
+}
+
+p {
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 17px;
+}
+
 ol {
     list-style: none;
     padding-left: 0;
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid lightgray;
 }
 
 ul {
     list-style: none;
+    display: inline-block;
+    vertical-align: top;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 22,8px;
+    color: #263555;
 }
