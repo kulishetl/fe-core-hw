@@ -3,15 +3,15 @@ html {
 }
 
 body {
-    padding-top: 300px;
-    padding-bottom: 650px;
+    padding-top: 240px;
+    padding-bottom: 540px;
     margin: 0;
     background: url("../img/sea.jpg") no-repeat;
     background-size: cover;
 }
 
 .wrapper {
-    width: 468px;
+    width: 406px;
     margin: auto;
     background-color: white;
     padding-top: 50px;
@@ -38,6 +38,10 @@ h2 {
     color: #263555;
 }
 
+.header .heading + p {
+    padding-bottom: 40px;
+}
+
 p {
     font-family: "Arial", sans-serif;
     font-size: 12px;
@@ -47,8 +51,8 @@ p {
 ol {
     list-style: none;
     padding-left: 0;
-    margin-bottom: 60px;
-    padding-bottom: 60px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
     border-bottom: 1px solid lightgray;
 }
 
@@ -56,6 +60,7 @@ ul {
     list-style: none;
     display: inline-block;
     vertical-align: top;
+    padding-bottom: 40px;
 }
 
 ul li {
@@ -63,4 +68,5 @@ ul li {
     font-size: 14px;
     line-height: 22,8px;
     color: #263555;
+    font-weight: bold;
 }
