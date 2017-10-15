@@ -1,11 +1,7 @@
-html {
-    background-color: grey;
-}
-
 body {
+    margin: 0;
     padding-top: 240px;
     padding-bottom: 540px;
-    margin: 0;
     background: url("../img/sea.jpg") no-repeat;
     background-size: cover;
 }
@@ -14,7 +10,7 @@ body {
     width: 406px;
     margin: auto;
     background-color: white;
-    padding-top: 50px;
+    padding-top: 40px;
     padding-left: 37px;
     padding-right: 37px;
 }
@@ -31,18 +27,17 @@ h2 {
 }
 
 .heading {
-    font-weight: bold;
     font-family: "Arial", sans-serif;
     font-size: 14px;
     line-height: 19px;
     color: #263555;
 }
 
-.header .heading + p {
-    padding-bottom: 40px;
+.header .information {
+    padding-bottom: 20px;
 }
 
-p {
+.information {
     font-family: "Arial", sans-serif;
     font-size: 12px;
     line-height: 17px;
@@ -51,8 +46,8 @@ p {
 ol {
     list-style: none;
     padding-left: 0;
-    margin-bottom: 50px;
-    padding-bottom: 50px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
     border-bottom: 1px solid lightgray;
 }
 
@@ -60,13 +55,12 @@ ul {
     list-style: none;
     display: inline-block;
     vertical-align: top;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 ul li {
     margin-bottom: 10px;
     font-size: 14px;
-    line-height: 22,8px;
+    line-height: 22.8px;
     color: #263555;
-    font-weight: bold;
 }
