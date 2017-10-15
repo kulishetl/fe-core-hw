@@ -7,7 +7,7 @@ body {
 }
 
 .wrapper {
-    width: 406px;
+    width: 404px;
     margin: auto;
     background-color: white;
     padding-top: 40px;
@@ -26,8 +26,12 @@ h2 {
     
 }
 
-.heading {
+.heading, .information {
     font-family: "Arial", sans-serif;
+}
+
+.heading {
+    
     font-size: 14px;
     line-height: 19px;
     color: #263555;
@@ -38,7 +42,6 @@ h2 {
 }
 
 .information {
-    font-family: "Arial", sans-serif;
     font-size: 12px;
     line-height: 17px;
 }
