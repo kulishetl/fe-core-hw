@@ -17,6 +17,7 @@ body {
     padding-left: 37px;
     padding-right: 37px;
 }
+
 h2, .heading, ul li {
     color: #263555;
 }
@@ -65,5 +66,5 @@ ul li {
 }
 
 .right-column {
-    margin-left: 25px;
+    margin-left: 20px;
 }
