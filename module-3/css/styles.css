@@ -17,23 +17,25 @@ body {
     padding-left: 37px;
     padding-right: 37px;
 }
+h2, .heading, ul li {
+    color: #263555;
+}
 
 h2 {
     font-weight: normal;
-    font-family: 'Pathway Gothic One', sans-serif;
+    font-family: "Pathway Gothic One", sans-serif;
     font-size: 25px;
-    color: #263555;
     margin-bottom: 35px;
 }
 
 .heading {
     font-size: 14px;
     line-height: 19px;
-    color: #263555;
 }
 
 .header .information {
     padding-bottom: 20px;
+    padding-left: 1px;
 }
 
 ol {
@@ -60,5 +62,8 @@ ul li {
     margin-bottom: 10px;
     font-size: 14px;
     line-height: 22.8px;
-    color: #263555;
+}
+
+.right-column {
+    margin-left: 25px;
 }
