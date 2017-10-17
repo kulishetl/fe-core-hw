@@ -10,12 +10,16 @@ body {
 }
 
 .wrapper {
-    width: 404px;
+    max-width: 404px;
     margin: auto;
     background-color: white;
     padding-top: 40px;
     padding-left: 37px;
     padding-right: 37px;
+}
+
+img {
+    max-width: 100%;
 }
 
 h2, .heading, ul li {
