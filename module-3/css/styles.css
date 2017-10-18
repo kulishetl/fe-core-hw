@@ -1,7 +1,5 @@
 body {
     margin: 0;
-    padding-top: 240px;
-    padding-bottom: 540px;
     background: url("../img/sea.jpg") no-repeat;
     background-size: cover;
     font-family: "Arial", sans-serif;
@@ -22,7 +20,7 @@ img {
     max-width: 100%;
 }
 
-h2, .heading, ul li {
+h2, .shortcut, ul li {
     color: #263555;
 }
 
@@ -33,12 +31,12 @@ h2 {
     margin-bottom: 35px;
 }
 
-.heading {
+.shortcut {
     font-size: 14px;
     line-height: 19px;
 }
 
-.header .information {
+.top-container .information {
     padding-bottom: 20px;
     padding-left: 1px;
 }
