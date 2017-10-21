@@ -1,78 +1,104 @@
-body {
+* {
     margin: 0;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background: url("../img/sea.jpg") no-repeat;
+    padding: 0;
+}
+
+body {
+    background: url("../img/background.jpg");
     background-size: cover;
-    font-family: "Arial", sans-serif;
-    font-size: 12px;
-    line-height: 17px;
+    padding: 60px;
 }
 
 .wrapper {
-    max-width: 404px;
-    margin: auto;
-    background-color: white;
-    padding-top: 59px;
-    padding-left: 37px;
-    padding-right: 37px;
+    max-width: 902px;
+    padding: 117px 61px 0 61px;
+    margin: 0 auto 0 auto;
+    font-family: "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 19px;
+    background-color: #ffffff;
 }
 
-img {
-    max-width: 100%;
-    margin-bottom: 28px;
-    
+.container-top {
+    margin-bottom: 16px;
 }
 
-h2, .shortcut, ul li {
-    color: #263555;
+.container-1, .container-2,
+.container-3, .container-4 {
+    display: inline-block;
 }
 
 h2 {
-    font-weight: normal;
     font-family: "Pathway Gothic One", sans-serif;
-    font-size: 25px;
-    line-height: 19px;
-    margin-bottom: 21px;
+    font-size: 32px;
+    text-transform: uppercase;
+    height: 24px;
     background-color: gray;
 }
 
+.container-1 {
+    max-width: 641px;
+    margin-right: 51px;
+}
+
+.container-1 h2, .container-2 h2 {
+    margin-bottom: 48px;
+}
+
+img {
+    float: left;
+    margin-right: 24px;
+}
+
 .shortcut {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 19px;
 }
 
-.top-container .information {
-    padding-bottom: 20px;
-    padding-left: 1px;
+.container-1 .shortcut {
+    margin-bottom: 10px;
 }
 
-ol {
+.container-1 .information {
+    margin-bottom: 8px;
+
+    background-color: lihtblue;
+}
+
+.container-2 {
+    max-width: 178px;
+    vertical-align: top;
+}
+
+.container-2 ol{
     list-style: none;
-    padding-left: 0;
-    margin-bottom: 40px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid lightgray;
 }
 
 ol li {
-    margin-right: 71px;
+    position: relative;
 }
 
-ul {
-    list-style: none;
-    display: inline-block;
-    vertical-align: top;
-    padding-bottom: 30px;
-    padding-left: 24px;
+ol li::before {
+    content:"1";
+    color: #ffffff;
+    width: 24px;
+    height: 21px;
+    padding-top: 5px;
+    font-size: 13px;
+    line-height: 16.63px;
+    text-align: center;
+    position: absolute;
+    border-radius: 13px 14px;
+    left: -37px;
+    top: 5px;
+    background-color: #38afe5;
+    border: 1px solid #639db8;
 }
 
-ul li {
-    margin-bottom: 10px;
-    font-size: 14px;
-    line-height: 22.8px;
+.container-2 .shortcut {
+    margin-bottom: 9px;
 }
 
-.right-column {
-    margin-left: 20px;
+.container-2 .information {
+    margin-bottom: 26px;
 }
