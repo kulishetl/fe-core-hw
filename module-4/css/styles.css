@@ -11,11 +11,12 @@ body {
 
 .wrapper {
     max-width: 902px;
-    padding: 117px 61px 0 61px;
+    padding: 117px 61px 80px 61px;
     margin: 0 auto 0 auto;
     font-family: "Arial", sans-serif;
     font-size: 13px;
     line-height: 19px;
+    color: #4e5050;
     background-color: #ffffff;
 }
 
@@ -32,9 +33,9 @@ body {
 h2 {
     font-family: "Pathway Gothic One", sans-serif;
     font-size: 32px;
+    color: #263555;
     text-transform: uppercase;
     height: 24px;
-    background-color: gray;
 }
 
 .container-1 {
@@ -54,6 +55,7 @@ img {
 .shortcut {
     font-size: 15px;
     line-height: 19px;
+    color: #263555;
 }
 
 .container-1 .shortcut {
@@ -110,9 +112,60 @@ ol li::before {
 }
 
 .container-3 {
-    max-width: 640px;
+    max-width: 641px;
+    margin-right: 51px;
 }
 
 .container-3 h2 {
     margin-bottom: 66px;
+}
+
+.container-4 {
+    max-width: 178px;
+    vertical-align: top;
+}
+
+.container-3 .shortcut {
+    margin-bottom: 20px;
+}
+
+.container-3 .information {
+    margin-bottom: 27px;
+}
+
+ul {
+    display: inline-block;
+    vertical-align: top;
+}
+
+ul li {
+    list-style: none;
+    font-size: 15px;
+    line-height: 22.8px;
+    color: #263555;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+ul li:last-of-type {
+    margin-bottom: 0;
+}
+
+.left-list {
+    padding-left: 24px;
+    margin-right: 67px;
+}
+
+ul li::before {
+    content: "";
+    width: 10px;
+    height: 7px;
+    position: absolute;
+    left: -24px;
+    top: 8px;
+    background: url("../img/arrow.png");
+}
+
+.container-4 h2 {
+    margin-bottom: 23px;
 }
