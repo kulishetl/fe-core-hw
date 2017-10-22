@@ -71,9 +71,9 @@ img {
 }
 
 .container-2 {
-    max-width: 178px;
+    max-width: 209px;
     vertical-align: top;
-    margin-right: 32px;
+    
 }
 
 ol li {
@@ -84,6 +84,7 @@ ol li {
 
 ol {
     counter-reset: list 0;
+    padding-left: 33px;
 }
 
 ol li:last-of-type {
@@ -102,8 +103,8 @@ ol li::before {
     text-align: center;
     position: absolute;
     border-radius: 13px 14px;
-    left: -37px;
-    top: 5px;
+    left: -35px;
+    top: 8px;
     background-color: #38afe5;
     border: 1px solid #639db8;
 }
@@ -191,4 +192,15 @@ blockquote .shortcut::before {
 
 blockquote .shortcut::after {
     content: "\201d";
+}
+
+blockquote .text {
+    font-size: 16px;
+    line-height: 22.8px;
+    text-align: center;
+    color: #263555;
+}
+
+blockquote .information {
+    text-align: center;
 }
