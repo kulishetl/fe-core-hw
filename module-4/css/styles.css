@@ -5,7 +5,6 @@
 
 body {
     background: url("../img/background.jpg");
-    font-size: 0;
     background-size: cover;
     padding: 60px;
 }
@@ -13,10 +12,8 @@ body {
 .wrapper {
     max-width: 902px;
     padding: 117px 61px 80px 61px;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
     font-family: "Arial", sans-serif;
-    font-size: 13px;
-    line-height: 19px;
     color: #4e5050;
     background-color: #ffffff;
 }
@@ -24,6 +21,12 @@ body {
 .container-top {
     margin-bottom: 58px;
     border-bottom: 1px solid #dedbdb;
+    font-size: 0px;
+}
+
+p {
+    font-size: 13px;
+    line-height: 19px;
 }
 
 .container-1, .container-2,
@@ -70,10 +73,7 @@ img {
 .container-2 {
     max-width: 178px;
     vertical-align: top;
-}
-
-.container-2 ol{
-    
+    margin-right: 32px;
 }
 
 ol li {
@@ -112,6 +112,10 @@ ol li::before {
     margin-bottom: 9px;
 }
 
+.container-bottom {
+    font-size: 0px;
+}
+
 .container-3 {
     max-width: 641px;
     margin-right: 51px;
@@ -122,7 +126,7 @@ ol li::before {
 }
 
 .container-4 {
-    max-width: 178px;
+    max-width: 210px;
     vertical-align: top;
 }
 
@@ -169,4 +173,22 @@ ul li::before {
 
 .container-4 h2 {
     margin-bottom: 23px;
+}
+
+blockquote .shortcut {
+    font-size: 15px;
+    line-height: 19px;
+    text-indent: 10px;
+    padding: 22px 20px 49px 22px;
+    background-color: #fcfafa;
+    border: 1px solid #dedbdb;
+    border-radius: 3px;
+}
+
+blockquote .shortcut::before {
+    content: "\201c";
+}
+
+blockquote .shortcut::after {
+    content: "\201d";
 }
