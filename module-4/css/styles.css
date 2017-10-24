@@ -1,3 +1,5 @@
+/* common styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -68,6 +70,8 @@ a:hover {
     margin-bottom: 48px;
 }
 
+/* styles of top .main */
+
 img {
     float: left;
     margin-right: 23px;
@@ -80,6 +84,8 @@ img {
 .container-top .main .information {
     margin-bottom: 8px;
 }
+
+/* styles of top .aside */
 
 ol {
     counter-reset: list 0;
@@ -124,10 +130,14 @@ ol li:last-of-type {
     margin-bottom: 0;
 }
 
+/* adding of border */
+
 .container-top {
     border-bottom: 1px solid #dedbdb;
     margin-bottom: 55px; 
 }
+
+/* styles of bottom .main */
 
 .container-bottom .main h2 {
     margin-bottom: 63px;
@@ -140,6 +150,8 @@ ol li:last-of-type {
 .container-bottom .main .information {
     margin-bottom: 30px;
 }
+
+/* styles of links lists */
 
 ul {
     display: inline-block;
@@ -173,6 +185,8 @@ ul:first-of-type {
     padding-left: 24px;
     margin-right: 67px;
 }
+
+/* styles of bottom .aside */
 
 .container-bottom .aside h2 {
     margin-bottom: 23px;
