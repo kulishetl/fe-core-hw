@@ -192,10 +192,7 @@ ul:first-of-type {
     margin-bottom: 23px;
 }
 
-.quote .shortcut {
-    font-size: 15px;
-    line-height: 19px;
-    text-indent: 10px;
+.triangle {
     padding: 22px 20px 25px 22px;
     position: relative;
     margin-bottom: 50px;
@@ -203,7 +200,13 @@ ul:first-of-type {
     border: 1px solid #dfdcdc;
 }
 
-.quote .shortcut::before, .quote .shortcut::after {
+.triangle .shortcut {
+    font-size: 15px;
+    line-height: 19px;
+    text-indent: 10px;
+}
+
+.triangle::before, .triangle::after {
     content: "";
     width: 0; 
     height: 0; 
@@ -216,23 +219,23 @@ ul:first-of-type {
     border-top: 20px solid #dfdcdc;
 }
 
-.quote .shortcut::after {
+.triangle::after {
     top: 199px;
-    left: 96px;
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    border-top: 19px solid #fcfafa;
+    left: 95px;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 20px solid #fcfafa;
 }
 
-span::before {
+.triangle .shortcut::before {
     content: "\201c";
 }
 
-span::after {
+.triangle .shortcut::after {
     content: "\201d";
 }
 
-.quote .text {
+.container-bottom .aside .text {
     font-size: 16px;
     line-height: 22.8px;
     text-align: center;
@@ -240,6 +243,6 @@ span::after {
     margin-bottom: 15px;
 }
 
-.quote .information {
+.container-bottom .aside .information {
     text-align: center;
 }
