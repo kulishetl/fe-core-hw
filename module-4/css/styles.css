@@ -144,7 +144,6 @@ ol li:last-of-type {
 ul {
     display: inline-block;
     vertical-align: top;
-    background-color: lightgray;
 }
 
 ul li {
