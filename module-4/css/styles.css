@@ -192,46 +192,20 @@ ul:first-of-type {
     margin-bottom: 23px;
 }
 
-.triangle {
-    padding: 22px 20px 25px 22px;
-    position: relative;
-    margin-bottom: 50px;
-    background-color: #fcfafa;
-    border: 1px solid #dfdcdc;
-}
-
-.triangle .shortcut {
-    font-size: 15px;
-    line-height: 19px;
+.container-bottom .aside .shortcut {
     text-indent: 10px;
+    padding: 22px 20px 45px 22px;
+    margin-bottom: 36px; 
+    background: url("../img/quote.png") no-repeat;
+    background-size: contain;
+    
 }
 
-.triangle::before, .triangle::after {
-    content: "";
-    width: 0; 
-    height: 0; 
-    display: inline-block;
-    position: absolute;
-    top: 200px;
-    left: 95px;
-    border-left: 13px solid transparent;
-    border-right: 13px solid transparent;
-    border-top: 20px solid #dfdcdc;
-}
 
-.triangle::after {
-    top: 199px;
-    left: 95px;
-    border-left: 13px solid transparent;
-    border-right: 13px solid transparent;
-    border-top: 20px solid #fcfafa;
-}
-
-.triangle .shortcut::before {
+.container-bottom .aside .shortcut::before {
     content: "\201c";
 }
-
-.triangle .shortcut::after {
+.container-bottom .aside .shortcut::after {
     content: "\201d";
 }
 
