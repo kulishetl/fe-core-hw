@@ -48,7 +48,7 @@ h2 {
     font-family: "Pathway Gothic One", sans-serif;
 }
 
-h2, .shortcut, a {
+h2, .shortcut, a, .text {
     color: #263555;
 }
 
