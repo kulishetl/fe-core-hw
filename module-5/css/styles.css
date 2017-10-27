@@ -68,9 +68,17 @@ li {
     color: #ffffff;
 }
 
+.link:hover {
+    color: #263555;
+}
+
 .sub-link {
     font-size: 20px;
     color: #6b7488;
+}
+
+.sub-link:hover {
+    color: #38afe5;
 }
 
 .sub-menu {
@@ -85,8 +93,12 @@ li {
     position: relative;
 }
 
-.sub-menu {
+.sub:hover>.sub-menu {
     display: block;
+}
+
+.sub-menu {
+    display: none;
     position: absolute;
     background: url("http://i.piccy.info/i9/ee29dd9bc0b5ad9800d80deaa4c95098/1509116119/354/1187300/Shape_10_copy.png") no-repeat;
     background-size: cover;
