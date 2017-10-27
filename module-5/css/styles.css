@@ -31,16 +31,18 @@ body {
     margin-left: -70px;
 }
 
+
 .menu {
     padding-left: 101px;
-    height: 140px;
-    line-height: 140px;
     margin-bottom: 49px;
 }
 
-.item {
+ .menu .item {
     display: inline-block;
     margin-right: 59px;
+    vertical-align: middle;
+    height: 140px;
+    line-height: 140px;
 }
 
 .item:last-of-type {
@@ -72,5 +74,33 @@ li {
 }
 
 .sub-menu {
-    display: none;
+    line-height: 20px;
+}
+
+.sub-menu .sub-item {
+    text-align: center;
+}
+
+.menu .item:nth-of-type(2) {
+    position: relative;
+}
+
+.sub-menu {
+    display: block;
+    position: absolute;
+    background: url("http://i.piccy.info/i9/ee29dd9bc0b5ad9800d80deaa4c95098/1509116119/354/1187300/Shape_10_copy.png") no-repeat;
+    background-size: cover;
+    top: 90px;
+    left: -15px;
+    width: 66px;
+    height: 88px;
+    padding: 14px 9px 9px 9px;
+}
+
+.sub-item {
+    margin-bottom: 9px;
+}
+
+.sub-item:last-of-type {
+    
 }
