@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 44px;
+    background: url("http://i.piccy.info/i9/c16dd83a137c0f945b96b8f12510e49b/1509110548/200045/1187300/Homework_5.jpg") no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    position: relative;
+    max-width: 1024px;
+    margin: auto;
+    background: lightgray;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-size: 60px;
+    font-family: "Dorsa", sans-serif;
+    line-height: 140px;
+    text-align: center;
+    width: 140px;
+    height: 140px;
+    background-color: #ffffff;;
+    border-radius: 70px;
+    position: absolute;
+    left: 50%;
+    margin-left: -70px;
+}
+
+.menu {
+    padding-left: 101px;
+    height: 140px;
+    line-height: 140px;
+    margin-bottom: 49px;
+}
+
+.item {
+    display: inline-block;
+    margin-right: 59px;
+}
+
+.item:last-of-type {
+    margin-right: 0;
+}
+
+.item:nth-of-type(3) {
+    margin-right: 220px;
+}
+
+li {
+    list-style: none;
+}
+
+.link, .sub-link {
+    font-family: "Pathway Gothic One", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.link {
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.sub-link {
+    font-size: 20px;
+    color: #6b7488;
+}
+
+.sub-menu {
+    display: none;
+}
