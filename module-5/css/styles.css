@@ -5,7 +5,7 @@
 
 body {
     padding-top: 44px;
-    background: url("http://i.piccy.info/i9/c16dd83a137c0f945b96b8f12510e49b/1509110548/200045/1187300/Homework_5.jpg") no-repeat;
+    background: url("../img/background.jpg") no-repeat;
     background-size: cover;
 }
 
@@ -33,6 +33,7 @@ body {
 
 nav {
     padding-top: 50px;
+    margin-bottom: 100px;
 }
 
 .menu {
@@ -102,9 +103,9 @@ li {
 .sub-menu {
     display: none;
     position: absolute;
-    background: url("http://i.piccy.info/i9/ee29dd9bc0b5ad9800d80deaa4c95098/1509116119/354/1187300/Shape_10_copy.png") no-repeat;
+    background: url("../img/menu.png") no-repeat;
     background-size: cover;
-    top: 40px;
+    top: 30px;
     left: -15px;
     width: 66px;
     height: 88px;
@@ -115,6 +116,14 @@ li {
     margin-bottom: 9px;
 }
 
-.sub-item:last-of-type {
-    
+main {
+    max-width: 902px;
+    padding: 58px 61px 136px 61px;
+    background-color: #ffffff;
+}
+
+section {
+    width: 902px;
+    height: 579px;
+    background: url("../img/slide-1.jpg") no-repeat;
 }
