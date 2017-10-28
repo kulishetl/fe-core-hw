@@ -33,7 +33,7 @@ body {
 
 nav {
     padding-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
 }
 
 .menu {
@@ -105,7 +105,7 @@ li {
     position: absolute;
     background: url("../img/menu.png") no-repeat;
     background-size: cover;
-    top: 30px;
+    top: 40px;
     left: -15px;
     width: 66px;
     height: 88px;
@@ -122,8 +122,96 @@ main {
     background-color: #ffffff;
 }
 
-section {
+.top {
     width: 902px;
     height: 579px;
     background: url("../img/slide-1.jpg") no-repeat;
+    margin-bottom: 57px;
+}
+
+.bottom {
+    font-size: 0;
+}
+
+h2 {
+    font-family: "Pathway Gothic one", sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 69px;
+}
+
+h3 {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.destination {
+    width: 288px;
+    height: 270px;
+    background-color: lightgray;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 19px;
+}
+
+.information {
+    font-family: "Arial MT", sans-serif;
+    font-size: 9px;
+    line-height: 15.21px;
+    color: #cbc6c6;
+}
+
+.destination:nth-of-type(1) {
+    background: url("../img/venice.jpg") no-repeat;
+}
+
+.destination:nth-of-type(2) {
+    background: url("../img/new-york.jpg") no-repeat;
+}
+
+.destination:nth-of-type(3) {
+    background: url("../img/paris.jpg") no-repeat;
+    margin-right: 0;
+}
+
+.destination:hover>figcaption {
+    display: block;
+}
+
+figcaption {
+    width: 129px;
+    height: 231px;
+    padding: 21px 9px 18px 9px;
+    position: relative;
+    text-align: justify;
+    background-color: #193149;
+    display: none;
+}
+
+.btn {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: "Arial MT", sans-serif;
+    color: #000000;
+    text-decoration: none;
+    display: inline-block;
+    width: 65px;
+    height: 24px;
+    background-color: #ffffff;
+    line-height: 24px;
+    text-align: center;
+    border: 1px solid rgba(159, 150, 150, 0.81);
+    border-radius: 5px;
+    position: absolute;
+    right: 10px;
+    bottom: 18px;
+}
+
+.btn:hover {
+    color: #ffffff;
+    background-color: #38afe5;
 }
