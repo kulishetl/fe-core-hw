@@ -333,7 +333,7 @@ article {
     display: block;
     position: fixed;
     bottom: 60px;
-    right: 450px;
+    right: 60px;
     width: 30px;
     height: 30px;
     border-radius: var(--bord-rad);
