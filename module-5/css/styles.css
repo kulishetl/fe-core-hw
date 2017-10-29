@@ -1,3 +1,14 @@
+:root {
+    --font-1: "Dorsa", sans-serif;
+    --font-2: "Pathway Gothic One", sans-serif;
+    --font-3: "Open Sans Condensed", sans-serif;
+    --font-4: "Arial", sans-serif;
+    --color-1: #263555;
+    --color-2: #ffffff;
+    --color-3: #38afe5;
+    --bord-rad: 50%;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -5,6 +16,7 @@
 
 body {
     padding-top: 44px;
+    padding-bottom: 60px;
     background: url("../img/background.jpg") no-repeat;
     background-size: cover;
 }
@@ -13,19 +25,18 @@ body {
     position: relative;
     max-width: 1024px;
     margin: auto;
-    /* background: lightgray; */
 }
 
 .logo {
     text-transform: uppercase;
     font-size: 60px;
-    font-family: "Dorsa", sans-serif;
+    font-family: var(--font-1);
     line-height: 140px;
     text-align: center;
     width: 140px;
     height: 140px;
-    background-color: #ffffff;;
-    border-radius: 70px;
+    background-color: var(--color-2);
+    border-radius: var(--bord-rad);
     position: absolute;
     left: 50%;
     margin-left: -70px;
@@ -61,18 +72,18 @@ li {
 }
 
 .link, .sub-link {
-    font-family: "Pathway Gothic One", sans-serif;
+    font-family: var(--font-2);
     text-transform: uppercase;
     text-decoration: none;
 }
 
 .link {
     font-size: 28px;
-    color: #ffffff;
+    color: var(--color-2);
 }
 
 .link:hover {
-    color: #263555;
+    color: var(--color-1);
 }
 
 .sub-link {
@@ -81,7 +92,7 @@ li {
 }
 
 .sub-link:hover {
-    color: #38afe5;
+    color: var(--color-3);
 }
 
 .sub-menu {
@@ -103,7 +114,7 @@ li {
 .sub-menu {
     display: none;
     position: absolute;
-    background-color: #fff;
+    background-color: var(--color-2);
     background-size: cover;
     top: 45px;
     left: -15px;
@@ -123,7 +134,7 @@ li {
   height: 0; 
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
-  border-bottom: 6px solid white;
+  border-bottom: 6px solid var(--color-2);
 }
 
 .sub-item {
@@ -133,7 +144,7 @@ li {
 main {
     max-width: 902px;
     padding: 58px 61px 136px 61px;
-    background-color: #ffffff;
+    background-color: var(--color-2);
 }
 
 .top {
@@ -144,7 +155,7 @@ main {
 }
 
  .top h2, .price {
-    font-family: "Pathway Gothic One", sans-serif;
+    font-family: var(--font-2);
     text-transform: uppercase;
     position: absolute;
 }
@@ -153,11 +164,11 @@ main {
     width: 223px;
     height: 59px;
     font-weight: normal;
-    color: #263555;
+    color: var(--color-1);
     font-size: 22px;
     line-height: 59px;
     top: 218px;
-    background-color: #ffffff;
+    background-color: var(--color-2);
     border: 1px solid #d5d3d1;
     text-align: center;
 }
@@ -171,13 +182,13 @@ main {
     line-height: 58px;
     text-align: center;
     top: 278px;
-    color: #ffffff;
-    background-color: #38afe5;
+    color: var(--color-2);
+    background-color: var(--color-3);
     border: 1px solid #3aa6d4;
 }
 
 .price:hover {
-    color: #263555;
+    color: var(--color-1);
 }
 
 .slider {
@@ -187,7 +198,7 @@ main {
     left: 36px;
 }
 
-.link1, .link2 {
+.slide-left, .slide-right {
     
     display: inline-block;
     width: 46px;
@@ -195,29 +206,30 @@ main {
     font-size: 20px;
   }
   
-  .link1:before, .link2:after {
+  .slide-left:before, .slide-right:after {
     content: "";
     width: 46px;
     height: 92px;
+    color: var(--color-2);
     position: absolute;
-    background-color: #38afe5;
+    background-color: var(--color-3);
   }
   
-  .link1:before {
-    content: url("../img/arrow-left.png");
+  .slide-left:before {
+    content: "\2190";
     line-height: 90px;
     text-align: center;
     border-radius: 46px 0px 00px 46px;
   }
   
-  .link2:after {
-    content: url("../img/arrow-right.png");
+  .slide-right:after {
+    content: "\2192";
     border-radius: 0px 46px 46px 0px;
     line-height: 90px;
     text-align: center;
   }
   
-  .link1:hover, .link2:hover {
+  .slide-left:hover, .slide-right:hover {
     opacity: 0.75;
   }
 
@@ -225,36 +237,42 @@ main {
     font-size: 0;
 }
 
-.bottom h2 {
-    font-family: "Pathway Gothic one", sans-serif;
+.top-dest {
+    display: block;
+    max-width: 165px;
+    text-decoration: none;
+    font-family: var(--font-2);
     font-size: 30px;
+    color: var(--color-1);
     text-transform: uppercase;
-    font-weight: normal;
     margin-bottom: 69px;
 }
 
+.top-dest:hover {
+    color: var(--color-3);
+}
+
 .city { 
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: var(--font-3);
     font-size: 30px;
     text-transform: uppercase;
     font-weight: normal;
     margin-bottom: 10px;
     width: 129px;
     text-align: center;
-    color: #ffffff;
+    color: var(--color-2);
 }
 
 .destination {
     width: 288px;
     height: 270px;
-    background-color: lightgray;
     display: inline-block;
     vertical-align: bottom;
     margin-right: 19px;
 }
 
 .information {
-    font-family: "Arial", sans-serif;
+    font-family: var(--font-4);
     font-size: 9px;
     line-height: 15.21px;
     color: #cbc6c6;
@@ -290,16 +308,16 @@ article {
 .btn {
     font-size: 12px;
     font-weight: bold;
-    font-family: "Arial MT", sans-serif;
+    font-family: var(--font-4);
     color: #000000;
     text-decoration: none;
     display: inline-block;
     width: 65px;
     height: 24px;
-    background-color: #ffffff;
+    background-color: var(--color-2);
     line-height: 24px;
     text-align: center;
-    border: 1px solid rgba(159, 150, 150, 0.81);
+    border: 1px solid #8b8c92;
     border-radius: 5px;
     position: absolute;
     right: 10px;
@@ -307,18 +325,18 @@ article {
 }
 
 .btn:hover {
-    color: #ffffff;
-    background-color: #38afe5;
+    color: var(--color-2);
+    background-color: var(--color-3);
 }
 
 .to-top {
-    display:block;
-    position:fixed;
-    bottom:30px;
-    right:450px;
-    width:30px;
-    height:30px;
-    border-radius:50%;
+    display: block;
+    position: fixed;
+    bottom: 8%;
+    right: 24%;
+    width: 30px;
+    height: 30px;
+    border-radius: var(--bord-rad);
     background: url("../img/to-Top.png") no-repeat;    
 }
 
