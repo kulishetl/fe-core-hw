@@ -237,6 +237,10 @@ main {
     font-size: 0;
 }
 
+.bottom h2 {
+    font-weight: normal;
+}
+
 .top-dest {
     display: block;
     max-width: 165px;
