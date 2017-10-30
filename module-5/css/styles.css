@@ -7,6 +7,7 @@
     --color-2: #ffffff;
     --color-3: #38afe5;
     --bord-rad: 50%;
+    --diam-logo: 140px;
 }
 
 *{
@@ -29,21 +30,21 @@ body {
 
 .logo {
     text-transform: uppercase;
-    font-size: 60px;
+    font-size: calc((var(--diam-logo) / 2) - 10px);
     font-family: var(--font-1);
-    line-height: 140px;
+    line-height: var(--diam-logo);
     text-align: center;
-    width: 140px;
-    height: 140px;
+    width: var(--diam-logo);
+    height: var(--diam-logo);
     background-color: var(--color-2);
     border-radius: var(--bord-rad);
     position: absolute;
     left: 50%;
-    margin-left: -70px;
+    margin-left: calc((var(--diam-logo) / 2) - var(--diam-logo));
 }
 
 nav {
-    padding-top: 50px;
+    padding-top: calc((var(--diam-logo) / 2) - 20px);
     margin-bottom: 120px;
 }
 
@@ -201,32 +202,27 @@ main {
 .slide-left, .slide-right {
     
     display: inline-block;
-    width: 46px;
-    height: 92px;
+    width: 45px;
+    height: 90px;
     font-size: 20px;
   }
   
   .slide-left:before, .slide-right:after {
     content: "";
-    width: 46px;
-    height: 92px;
+    width: 45px;
+    height: 90px;
     color: var(--color-2);
     position: absolute;
-    background-color: var(--color-3);
+    background: url("../img/slider-sprite.png") no-repeat;
   }
   
   .slide-left:before {
-    content: "\2190";
-    line-height: 90px;
-    text-align: center;
     border-radius: 46px 0px 00px 46px;
   }
   
   .slide-right:after {
-    content: "\2192";
     border-radius: 0px 46px 46px 0px;
-    line-height: 90px;
-    text-align: center;
+    background-position: -46px 0;
   }
   
   .slide-left:hover, .slide-right:hover {
