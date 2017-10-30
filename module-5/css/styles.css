@@ -8,6 +8,7 @@
     --color-3: #38afe5;
     --bord-rad: 50%;
     --diam-logo: 140px;
+    --tansition: 0.5s;
 }
 
 *{
@@ -53,7 +54,7 @@ nav {
     margin-bottom: 49px;
 }
 
- .menu .item {
+.menu .item {
     display: inline-block;
     margin-right: 59px;
     vertical-align: middle;
@@ -85,6 +86,7 @@ li {
 
 .link:hover {
     color: var(--color-1);
+    transition: var(--tansition);
 }
 
 .sub-link {
@@ -94,6 +96,7 @@ li {
 
 .sub-link:hover {
     color: var(--color-3);
+    transition: var(--tansition);
 }
 
 .sub-menu {
@@ -190,6 +193,7 @@ main {
 
 .price:hover {
     color: var(--color-1);
+    transition: var(--tansition);
 }
 
 .slider {
@@ -227,6 +231,7 @@ main {
   
   .slide-left:hover, .slide-right:hover {
     opacity: 0.75;
+    transition: var(--tansition);
   }
 
 .bottom {
@@ -246,6 +251,7 @@ main {
 
 .top-dest:hover {
     color: var(--color-3);
+    transition: var(--tansition);
 }
 
 .city { 
@@ -287,10 +293,6 @@ main {
     margin-right: 0;
 }
 
-.destination:hover>article {
-    display: block;
-}
-
 article {
     width: 129px;
     height: 231px;
@@ -299,6 +301,10 @@ article {
     text-align: justify;
     background-color: #193149;
     display: none;
+}
+
+.destination:hover>article {
+    display: block;
 }
 
 .btn {
@@ -323,6 +329,7 @@ article {
 .btn:hover {
     color: var(--color-2);
     background-color: var(--color-3);
+    transition: var(--tansition);
 }
 
 .to-top {
@@ -337,5 +344,6 @@ article {
 }
 
 .to-top:hover {
-    opacity: 0.75;
+    opacity: 0.55;
+    transition: var(--tansition);
 }
