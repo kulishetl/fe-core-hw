@@ -12,6 +12,8 @@ body {
     padding-bottom: 60px;
     background: url("../../img/background.jpg") no-repeat;
     background-size: cover;
+    font-family: "Arial", sans-serif;
+    color: #4e5050;
 }
 
 .wrapper {
@@ -135,6 +137,192 @@ li {
 
 article {
     max-width: 902px;
-    padding: 58px 61px 136px 61px;
+    padding: 58px 61px 78px 61px;
     background-color: #ffffff;
+}
+
+.container-top, .container-bottom {
+    display: flex;
+}
+
+.container-top {
+    border-bottom: 1px solid #dedbdb;
+    margin-bottom: 55px; 
+}
+
+.main, .aside {
+    font-size: 13px;
+    line-height: 19px;
+}
+
+.main {
+    min-width: 641px;
+    margin-right: 51px;
+}
+
+.aside {
+    min-width: 211px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-family: "Pathway Gothic One", sans-serif;
+}
+
+h2, .shortcut, a, .text {
+    color: #263555;
+}
+
+.shortcut, a {
+    font-size: 15px;
+    line-height: 19px;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: #38afe5;
+}
+
+.container-top .main h2,
+.container-top .aside h2 {
+    margin-bottom: 48px;
+}
+
+img {
+    float: left;
+    margin-right: 23px;
+}
+
+.container-top .main .shortcut {
+    margin-bottom: 8px;
+}
+
+.container-top .main .information {
+    margin-bottom: 8px;
+}
+
+ol {
+    counter-reset: list 0;
+    margin-bottom: 42px;
+}
+
+ol li {
+    list-style: none;
+}
+
+ol div {
+    display: inline-block;
+    max-width: 169px;
+}
+
+ol li::before {
+    counter-increment: list;
+    content: counter(list) "";
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+    margin-right: 9px;
+    color: #ffffff;
+    text-align: center;
+    width: 24px;
+    height: 26px;
+    line-height: 26px;
+    background-color: #38afe5;
+    border: 1px solid #4994b5;
+    border-radius: 13px;
+}
+
+ol .shortcut {
+    margin-bottom: 10px;
+}
+
+ol li {
+    margin-bottom: 26px;
+}
+
+ol li:last-of-type {
+    margin-bottom: 0;
+}
+
+.container-bottom .main h2 {
+    margin-bottom: 63px;
+}
+
+.container-bottom .main .shortcut {
+    margin-bottom: 23px;
+}
+
+.container-bottom .main .information {
+    margin-bottom: 30px;
+}
+
+.main ul {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.main ul li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.main ul li:last-of-type {
+    margin-bottom: 0;
+}
+
+.main ul a {
+    line-height: 22.8px;
+}
+
+.main ul li::before {
+    content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAKCAMAAAC38k/IAAAABlBMVEU4r+X///9eJqNQAAAAIElEQVR4AWNgRAJYOQwoMgwoyhhAiAEOkGVw6GHAsAcAG2EAaeJ5cVwAAAAASUVORK5CYII=");
+    width: 15px;
+    height: 10px;
+    line-height: 10px;
+    display: inline-block;
+    margin-right: 7px;
+    color: #38afe5;
+}
+
+.main ul:first-of-type {
+    padding-left: 24px;
+    margin-right: 67px;
+}
+
+.container-bottom .aside h2 {
+    margin-bottom: 23px;
+}
+
+.container-bottom .aside .shortcut {
+    text-indent: 10px;
+    padding: 22px 20px 45px 22px;
+    margin-bottom: 36px; 
+    background: url("../img/quote.png") no-repeat;
+    background-size: contain;
+}
+
+
+.container-bottom .aside .shortcut::before {
+    content: "\201c";
+}
+.container-bottom .aside .shortcut::after {
+    content: "\201d";
+}
+
+.container-bottom .aside .text {
+    font-size: 16px;
+    line-height: 22.8px;
+    text-align: center;
+    color: #263555;
+    margin-bottom: 15px;
+}
+
+.container-bottom .aside .information {
+    text-align: center;
 }
