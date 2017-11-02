@@ -107,7 +107,7 @@ li {
 
 .sub-menu {
     position: absolute;
-    top: 45px;
+    top: 40px;
     left: -15px;
     display: none;
     width: 66px;
@@ -295,16 +295,22 @@ ol li:last-of-type {
     margin-right: 67px;
 }
 
+.container-bottom .aside {
+    position: relative;
+}
+
 .container-bottom .aside h2 {
     margin-bottom: 23px;
 }
 
 .container-bottom .aside .shortcut {
     text-indent: 10px;
-    padding: 22px 20px 45px 22px;
+    padding: 22px 20px 18px 22px;
     margin-bottom: 36px; 
-    background: url("../img/quote.png") no-repeat;
-    background-size: contain;
+    /* background: url("../img/quote.png") no-repeat; */
+    /* background-size: contain; */
+    background-color: #fcfafa;
+    border: 1px solid #e9e6e6;
 }
 
 
@@ -313,6 +319,30 @@ ol li:last-of-type {
 }
 .container-bottom .aside .shortcut::after {
     content: "\201d";
+}
+
+.container-bottom .aside .quote:before {
+    content: "";
+    position: absolute;
+    top: 235px;
+    left: 91px;
+    width: 0; 
+    height: 0; 
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 26px solid #e9e6e6;
+}
+
+.container-bottom .aside .quote:after {
+    content: "";
+    position: absolute;
+    top: 233px;
+    left: 91px;
+    width: 0; 
+    height: 0; 
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 26px solid #fcfafa;
 }
 
 .container-bottom .aside .text {
@@ -325,4 +355,8 @@ ol li:last-of-type {
 
 .container-bottom .aside .information {
     text-align: center;
+}
+
+footer {
+    background-color: #30455b;
 }
