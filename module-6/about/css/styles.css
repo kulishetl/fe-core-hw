@@ -152,17 +152,16 @@ article {
     background-color: #ffffff;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
 }
 
 .main1,
 .main2 {
-    width: 641px;
+    max-width: 641px;
 }
 
 .aside1,
 .aside2 {
-    width: 210px;
+    max-width: 210px;
     padding-left: 51px;
 }
 
@@ -404,14 +403,14 @@ footer {
 
 .social a:hover {
     transition: 0.5s;
-    filter: grayscale(100%);
+    filter: invert(100%);
 }
 
 .social .facebook {
     background-position: -41px 0;
   }
   
-  .social .google {
+.social .google {
     background-position: -82px 0;
   }
   
