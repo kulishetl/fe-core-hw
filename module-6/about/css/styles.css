@@ -1,5 +1,14 @@
 :root {
-
+    --font-1: "Dorsa", sans-serif;
+    --font-2: "Pathway Gothic One", sans-serif;
+    --font-3: "Open Sans Condensed", sans-serif;
+    --font-4: "Arial", sans-serif;
+    --color-1: #263555;
+    --color-2: #ffffff;
+    --color-3: #38afe5;
+    --bord-rad: 50%;
+    --diam-logo: 140px;
+    --tansition: 0.5s;
 }
 
 * {
@@ -25,20 +34,20 @@ body {
 .logo {
     position: absolute;
     left: 50%;
-    width: 140px;
-    height: 140px;
-    margin-left: -70px;
-    font-size: 60px;
-    font-family: "Dorsa", sans-serif;
-    line-height: 140px;
+    width: var(--diam-logo);
+    height: var(--diam-logo);
+    margin-left: calc((var(--diam-logo) / 2) - var(--diam-logo));
+    font-size: calc((var(--diam-logo) / 2) - 10px);
+    font-family: var(--font-1);
+    line-height: var(--diam-logo);
     text-align: center;
     text-transform: uppercase;    
-    background-color: #ffffff;
-    border-radius: 50%;
+    background-color: var(--color-2);
+    border-radius: var(--bord-rad);
 }
 
 nav {
-    padding-top: 50px;
+    padding-top: calc((var(--diam-logo) / 2) - 20px);
     margin-bottom: 120px;
 }
 
@@ -56,7 +65,7 @@ nav {
 }
 
 .item:nth-of-type(3) {
-    margin-right: 180px;
+    margin-right: calc(var(--diam-logo) + 20px);
 }
 
 li {
@@ -360,7 +369,7 @@ ol li:last-of-type {
     background-color: #30455b;
     display: flex;
     justify-content: space-between;
-    padding: 40px 140px 30px 180px;
+    padding: 40px 140px 30px 140px;
     margin-bottom: 26px;
 }
 
