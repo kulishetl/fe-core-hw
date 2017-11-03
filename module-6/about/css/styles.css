@@ -9,7 +9,7 @@
 
 body {
     padding-top: 44px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     background: url("../../img/background.jpg") no-repeat;
     background-size: cover;
     font-family: "Arial", sans-serif;
@@ -287,7 +287,6 @@ ol li:last-of-type {
     line-height: 10px;
     display: inline-block;
     margin-right: 7px;
-    color: #38afe5;
 }
 
 .main ul:first-of-type {
@@ -357,6 +356,105 @@ ol li:last-of-type {
     text-align: center;
 }
 
-footer {
+.useful-links {
     background-color: #30455b;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 140px 30px 180px;
+    margin-bottom: 26px;
+}
+
+.useful-links li {
+    margin-bottom: 15px;
+}
+
+.useful-links li, 
+.useful-links a {
+    color: #ffffff;
+    font-family: "Open Sans Condensed", sans-serif; 
+    text-transform: uppercase;
+}
+
+.useful-links a {
+    font-size: 16px;
+}
+
+.useful-links a:hover {
+    color: #38afe5;
+}
+
+.useful-links ul:last-of-type li:first-of-type {
+    font-size: 18px;
+}
+
+.useful-links ul:last-of-type li:nth-of-type(n+2) {
+    font-size: 12px;
+    line-height: 19px;
+    margin-bottom: 0;
+}
+
+.useful-links ul:last-of-type li:last-of-type {
+    text-transform: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    width: 199px;
+    margin-bottom: 25px;
+}
+
+.social a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url("../../img/sprite.png") no-repeat;
+}
+
+.social a:hover {
+    transition: 0.5s;
+    filter: grayscale(100%);
+}
+
+.social .facebook {
+    background-position: -41px 0;
+  }
+  
+  .social .google {
+    background-position: -82px 0;
+  }
+  
+.social .linkedin {
+    background-position: -123px 0;
+  }
+
+.copyright {
+      display: flex;
+  }
+
+.copyright li, .copyright a {
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    color: #ffffff;
+}
+
+.copyright a:hover {
+    color: #263555;
+}
+
+.copyright li {
+    padding-left: 5px;
+    padding-right: 5px;
+    border-left: 2px solid #ffffff;
+}
+
+.copyright li:first-of-type {
+    border-left: none;
 }
