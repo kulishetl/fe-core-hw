@@ -26,6 +26,8 @@ body {
 }
 
 .wrapper {
+    display: flex;
+    flex-direction: column;
     position: relative;
     max-width: 1024px;
     margin: auto;
@@ -47,8 +49,8 @@ body {
 }
 
 nav {
-    padding-top: calc((var(--diam-logo) / 2) - 20px);
-    margin-bottom: 120px;
+    padding-top: 50px;
+    margin-bottom: 70px;
 }
 
 .menu {
@@ -56,7 +58,7 @@ nav {
     justify-content: space-between;
     padding-left: 100px;
     padding-right: 100px;
-    margin-bottom: 49px;
+    margin-bottom: 50px;
 }
 
 .menu .item {
@@ -148,29 +150,32 @@ article {
     max-width: 902px;
     padding: 58px 61px 78px 61px;
     background-color: #ffffff;
-}
-
-.container-top, .container-bottom {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
-.container-top {
+.main1,
+.main2 {
+    width: 641px;
+}
+
+.aside1,
+.aside2 {
+    width: 210px;
+    padding-left: 51px;
+}
+
+.main1,
+.aside1 {
     border-bottom: 1px solid #dedbdb;
     margin-bottom: 55px; 
 }
 
-.main, .aside {
+.main1, .main2,
+.aside1, .aside2 {
     font-size: 13px;
     line-height: 19px;
-}
-
-.main {
-    min-width: 641px;
-    margin-right: 51px;
-}
-
-.aside {
-    min-width: 211px;
 }
 
 h2 {
@@ -198,8 +203,8 @@ a:hover {
     color: #38afe5;
 }
 
-.container-top .main h2,
-.container-top .aside h2 {
+.main1 h2,
+.aside1 h2 {
     margin-bottom: 48px;
 }
 
@@ -208,11 +213,11 @@ img {
     margin-right: 23px;
 }
 
-.container-top .main .shortcut {
+.main1 .shortcut {
     margin-bottom: 8px;
 }
 
-.container-top .main .information {
+.main1 .information {
     margin-bottom: 8px;
 }
 
@@ -259,37 +264,36 @@ ol li:last-of-type {
     margin-bottom: 0;
 }
 
-.container-bottom .main h2 {
+.main2 h2 {
     margin-bottom: 63px;
 }
 
-.container-bottom .main .shortcut {
+.main2 .shortcut {
     margin-bottom: 23px;
 }
 
-.container-bottom .main .information {
+.main2 .information {
     margin-bottom: 30px;
 }
 
-.main ul {
+.main2 ul {
     display: inline-block;
     vertical-align: top;
 }
 
-.main ul li {
-    list-style: none;
+.main2 ul li {
     margin-bottom: 20px;
 }
 
-.main ul li:last-of-type {
+.main2 ul li:last-of-type {
     margin-bottom: 0;
 }
 
-.main ul a {
+.main2 ul a {
     line-height: 22.8px;
 }
 
-.main ul li::before {
+.main2 ul li::before {
     content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAKCAMAAAC38k/IAAAABlBMVEU4r+X///9eJqNQAAAAIElEQVR4AWNgRAJYOQwoMgwoyhhAiAEOkGVw6GHAsAcAG2EAaeJ5cVwAAAAASUVORK5CYII=");
     width: 15px;
     height: 10px;
@@ -298,62 +302,34 @@ ol li:last-of-type {
     margin-right: 7px;
 }
 
-.main ul:first-of-type {
+.main2 ul:first-of-type {
     padding-left: 24px;
     margin-right: 67px;
 }
 
-.container-bottom .aside {
+.aside2 {
     position: relative;
 }
 
-.container-bottom .aside h2 {
+.aside2 h2 {
     margin-bottom: 23px;
 }
 
-.container-bottom .aside .shortcut {
+.aside2 .shortcut {
     text-indent: 10px;
-    padding: 22px 20px 18px 22px;
+    padding: 22px 20px 45px 22px;
     margin-bottom: 36px; 
-    /* background: url("../img/quote.png") no-repeat; */
-    /* background-size: contain; */
-    background-color: #fcfafa;
-    border: 1px solid #e9e6e6;
+    background: url("../img/quote.png") no-repeat;
+    background-size: contain;
 }
 
-
-.container-bottom .aside .shortcut::before {
+.aside2 .shortcut::before {
     content: "\201c";
 }
-.container-bottom .aside .shortcut::after {
+.aside2 .shortcut::after {
     content: "\201d";
 }
-
-.container-bottom .aside .quote:before {
-    content: "";
-    position: absolute;
-    top: 235px;
-    left: 91px;
-    width: 0; 
-    height: 0; 
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-top: 26px solid #e9e6e6;
-}
-
-.container-bottom .aside .quote:after {
-    content: "";
-    position: absolute;
-    top: 233px;
-    left: 91px;
-    width: 0; 
-    height: 0; 
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-top: 26px solid #fcfafa;
-}
-
-.container-bottom .aside .text {
+.aside2 .text {
     font-size: 16px;
     line-height: 22.8px;
     text-align: center;
@@ -361,7 +337,7 @@ ol li:last-of-type {
     margin-bottom: 15px;
 }
 
-.container-bottom .aside .information {
+.aside2 .information {
     text-align: center;
 }
 
