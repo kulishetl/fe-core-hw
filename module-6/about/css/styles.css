@@ -61,11 +61,6 @@ nav {
     margin-bottom: 50px;
 }
 
-.menu .item {
-    line-height: 40px;
-    vertical-align: middle;
-}
-
 .item:nth-of-type(3) {
     margin-right: calc(var(--diam-logo) + 20px);
 }
@@ -74,13 +69,16 @@ li {
     list-style: none;
 }
 
-.link, .sub-link {
+.item .link, .sub-link {
     font-family: "Pathway Gothic One", sans-serif;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-.link {
+.item .link {
+    line-height: 40px;
+    vertical-align: middle;
+    line-height: 40px;
     font-size: 28px;
     color: #ffffff;
 }

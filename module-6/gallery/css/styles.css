@@ -49,7 +49,7 @@ body {
 }
 
 nav {
-    padding-top: 45px;
+    padding-top: 50px;
     margin-bottom: 70px;
 }
 
@@ -59,11 +59,6 @@ nav {
     padding-left: 100px;
     padding-right: 100px;
     margin-bottom: 50px;
-}
-
-.menu .item {
-    line-height: 40px;
-    vertical-align: middle;
 }
 
 .item:nth-of-type(3) {
@@ -80,7 +75,10 @@ li {
     text-transform: uppercase;
 }
 
-.link {
+.item .link {
+    line-height: 40px;
+    vertical-align: middle;
+    line-height: 40px;
     font-size: 28px;
     color: #ffffff;
 }
@@ -148,12 +146,11 @@ li {
 
 article {
     max-width: 902px;
-    padding: 50px 61px 100px 61px;
+    padding: 58px 61px 100px 61px;
     background-color: #ffffff;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: space-between;
 }
 
 h2 {
