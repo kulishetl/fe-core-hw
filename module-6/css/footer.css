@@ -1,15 +1,15 @@
 :root {
+    --bord-rad: 50%;
+    --color-1: #263555;
+    --color-2: #ffffff;
+    --color-3: #38afe5;
+    --diam-logo: 140px;
     --font-1: "Dorsa", sans-serif;
     --font-2: "Pathway Gothic One", sans-serif;
     --font-3: "Open Sans Condensed", sans-serif;
     --font-4: "Arial", sans-serif;
-    --color-1: #263555;
-    --color-2: #ffffff;
-    --color-3: #38afe5;
-    --bord-rad: 50%;
-    --diam-logo: 140px;
-    --tansition: 0.5s;
     --list-style: none;
+    --tansition: 0.5s;
 }
 
 * {
@@ -39,6 +39,7 @@
 
 .useful-links a {
     font-size: 16px;
+    text-decoration: none;
 }
 
 .useful-links a:hover {
@@ -107,6 +108,10 @@ footer {
     font-size: 12px;
     line-height: 15px;
     color: #ffffff;
+}
+
+.copyright a {
+    text-decoration: none;
 }
 
 .copyright a:hover {
