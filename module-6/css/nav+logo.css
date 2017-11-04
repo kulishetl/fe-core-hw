@@ -9,12 +9,12 @@
     --font-3: "Open Sans Condensed", sans-serif;
     --font-4: "Arial", sans-serif;
     --list-style: none;
-    --tansition: 0.5s;
+    --transition: 0.5s;
 }
 
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 .logo {
@@ -23,8 +23,8 @@
     width: var(--diam-logo);
     height: var(--diam-logo);
     margin-left: calc((var(--diam-logo) / 2) - var(--diam-logo));
-    font-size: calc((var(--diam-logo) / 2) - 10px);
     font-family: var(--font-1);
+    font-size: calc((var(--diam-logo) / 2) - 10px);
     line-height: var(--diam-logo);
     color: var(--color-1);
     text-align: center;
@@ -41,8 +41,8 @@ nav {
 .menu {
     display: flex;
     justify-content: space-between;
-    padding-left: 100px;
     padding-right: 100px;
+    padding-left: 100px;
     margin-bottom: 50px;
 }
 
@@ -57,21 +57,21 @@ nav {
 
 .link,
 .sub-link {
-    font-family: "Pathway Gothic One", sans-serif;
+    font-family: var(--font-2);
     text-decoration: none;
     text-transform: uppercase;
 }
 
 .item .link {
-    vertical-align: middle;
-    line-height: 40px;
     font-size: 28px;
-    color: #ffffff;
+    line-height: 40px;
+    color: var(--color-2);
+    vertical-align: middle;
 }
 
 .link:hover {
-    color: #263555;
-    transition: 0.5s;
+    color: var(--color-1);
+    transition: var(--transition);
 }
 
 .sub-link {
@@ -80,8 +80,8 @@ nav {
 }
 
 .sub-link:hover {
-    color: #38afe5;
-    transition: 0.5s;
+    color: var(--color-3);
+    transition: var(--transition);
 }
 
 .sub-menu {
@@ -108,7 +108,7 @@ nav {
     width: 66px;
     height: 88px;
     padding: 7px;
-    background-color: #ffffff;
+    background-color: var(--color-2);
     background-size: cover;    
     border-radius: 3px;
 }
@@ -122,7 +122,7 @@ nav {
   width: 0; 
   height: 0; 
   border-right: 4px solid transparent;
-  border-bottom: 6px solid #ffffff;
+  border-bottom: 6px solid var(--color-2);
   border-left: 4px solid transparent;
 }
 
