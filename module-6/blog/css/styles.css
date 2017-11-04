@@ -9,12 +9,12 @@
     --font-3: "Open Sans Condensed", sans-serif;
     --font-4: "Arial", sans-serif;
     --list-style: none;
-    --tansition: 0.5s;
+    --transition: 0.5s;
 }
 
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 body {
@@ -183,7 +183,7 @@ h2 {
 .btn:hover {
     color: var(--color-2);
     background-color: var(--color-3);
-    transition: var(--tansition);
+    transition: var(--transition);
 }
 
 .aside h2 {
@@ -225,5 +225,5 @@ h2 {
   
 .aside a:hover {
     color: #38afe5;
-    transition: 0.5s;
+    transition: var(--transition);
 }
