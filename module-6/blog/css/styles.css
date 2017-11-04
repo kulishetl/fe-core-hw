@@ -20,7 +20,7 @@
 body {
     padding-top: 44px;
     padding-bottom: 30px;
-    font-family: "Arial", sans-serif;
+    font-family: var(--font-4);
     font-size: 10px;
     color: #4e5050;
     background: url("../../img/background.jpg") no-repeat;
@@ -40,7 +40,7 @@ article {
     flex-wrap: wrap;
     max-width: 902px;
     padding: 58px 61px 40px 61px;
-    background-color: #ffffff;
+    background-color: var(--color-2);
 }
 
 .main {
@@ -58,8 +58,8 @@ article {
 }
 
 .aside {
-    max-width: 210px;
     padding-left: 8px;
+    max-width: 210px;
 }
 
 .post img {
@@ -69,7 +69,7 @@ article {
 }
 
 h2 {
-    font-family: "Pathway Gothic One", sans-serif;
+    font-family: var(--font-2);
     font-size: 32px;
     font-weight: normal;
     color: var(--color-1);
@@ -81,7 +81,7 @@ h2 {
     display: inline-block;
     padding-left: 35px;
     margin-top: 46px;
-    font-family: "Arial", sans-serif;
+    font-family: var(--font-4);
     font-size: 13px;
     font-weight: bold;
     line-height: 15.2px;
@@ -95,9 +95,9 @@ h2 {
     display: inline-block;
     width: 31px;
     height: 15.5px;
-    font-family: "Arial", sans-serif;
+    font-family: var(--font-4);
     font-size: 9px;
-    color: #ffffff;
+    color: var(--color-2);
     text-align: center;
     vertical-align: middle;
     background-color: #38afe5;
@@ -155,7 +155,7 @@ h2 {
     margin-bottom: 15px;
     font-size: 13px;
     line-height: 15.2px;
-    color: #263555;
+    color: var(--color-1);
 }
 
 .information {
@@ -216,7 +216,7 @@ h2 {
 }
 
 .aside a {
-    font-family: "Arial", sans-serif;
+    font-family: var(--font-4);
     font-size: 13px;
     line-height: 18.24px;
     color: var(--color-1);
