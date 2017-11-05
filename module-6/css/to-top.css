@@ -24,7 +24,7 @@
     height: 30px;
     background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAASElEQVQ4y2NgGAWDGPxv+N9AmnIQaCBF+R8gJE4LWPnv/2H/w4nSAlMOZhPWAlUeCucT0gLU8Pt/CIoISEsdPju0CIuMgsEAAKEwSaIZoavCAAAAAElFTkSuQmCC") no-repeat;
     background-color: var(--color-3);
-    background-position: 3px 3px;
+    background-position: 3px 2px;
     border-radius: var(--bord-rad);   
 }
 
