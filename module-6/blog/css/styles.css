@@ -150,6 +150,7 @@ h2 {
 .post-information {
     display: flex;
     align-items: flex-end;
+    margin-right: 71px;
     margin-bottom: 15px;
     font-size: 10px;
     line-height: 15.2px;
@@ -173,6 +174,7 @@ h2 {
 .information {
     margin-bottom: 15px;
     line-height: 15.2px;
+    text-align: justify;
 }
 
 .btn {
