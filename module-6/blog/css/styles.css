@@ -162,10 +162,10 @@ h2 {
 }
 
 .shortcut {
-    margin-right: 38px;
+    margin-right: 61px;
     margin-bottom: 15px;
+    font-family: "Arial MT", sans-serif;
     font-size: 13px;
-    font-weight: bold;
     line-height: 15.2px;
     color: var(--color-1);
 }
