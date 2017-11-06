@@ -20,15 +20,16 @@
 nav {
     position: relative;
     padding-top: 50px;
-    margin-bottom: 70px;
+    margin-bottom: calc(var(--diam-logo) / 2);
 }
 
 .logo {
     position: absolute;
-    bottom: 0;
+    top: 50%;
     left: 50%;
     width: var(--diam-logo);
     height: var(--diam-logo);
+    margin-top: calc((var(--diam-logo) / 2) - var(--diam-logo));
     margin-left: calc((var(--diam-logo) / 2) - var(--diam-logo));
     font-family: var(--font-1);
     font-size: calc((var(--diam-logo) / 2) - 10px);
@@ -42,9 +43,9 @@ nav {
 
 .menu {
     display: flex;
-    justify-content: space-between;
-    padding-right: 100px;
-    padding-left: 100px;
+    justify-content: space-around;
+    padding-right: 61px;
+    padding-left: 61px;
     margin-bottom: 50px;
 }
 
