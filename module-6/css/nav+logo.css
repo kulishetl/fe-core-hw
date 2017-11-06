@@ -17,8 +17,15 @@
     margin: 0;
 }
 
+nav {
+    position: relative;
+    padding-top: 50px;
+    margin-bottom: 70px;
+}
+
 .logo {
     position: absolute;
+    bottom: 0;
     left: 50%;
     width: var(--diam-logo);
     height: var(--diam-logo);
@@ -31,11 +38,6 @@
     text-transform: uppercase;    
     background-color: var(--color-2);
     border-radius: var(--bord-rad);
-}
-
-nav {
-    padding-top: 50px;
-    margin-bottom: 70px;
 }
 
 .menu {
