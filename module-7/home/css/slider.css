@@ -1,0 +1,89 @@
+/*положение слайдера*/
+.slider { 
+    position: relative;
+}
+
+/*все изображения справа друг от доруга*/
+.slides img { 
+	width: 20%;
+	float: left;
+}
+
+/*устанавливает общий размер блока с изображениями*/
+.slides .images { 
+	width: 500%;
+	line-height: 0;
+}
+
+/*сркывает все, что находится за пределами этого блока*/
+.overflow { 
+	width: 100%;
+	overflow: hidden;
+}
+
+/*настройка переключения и положения для левой стрелки*/
+
+#switch1:checked ~ .controls label:nth-child(4), 
+#switch2:checked ~ .controls label:nth-child(1),
+#switch3:checked ~ .controls label:nth-child(2),
+#switch4:checked ~ .controls label:nth-child(3) {
+    position: absolute;
+    bottom: 39px;
+    left: 37px;
+    display: block;
+    width: 45px;
+    height: 90px;
+    background: url("../img/slider-sprite.png") no-repeat;
+}
+
+/*настройка переключения и положения для правой стрелки*/
+
+#switch1:checked ~ .controls label:nth-child(2), 
+#switch2:checked ~ .controls label:nth-child(3),
+#switch3:checked ~ .controls label:nth-child(4),
+#switch4:checked ~ .controls label:nth-child(1) {
+    position: absolute;
+    bottom: 39px;
+    left: 82px;
+    display: block;
+    width: 45px;
+    height: 90px;
+    background: url("../img/slider-sprite.png") no-repeat -45px 0;
+}
+
+/*при наведении на стрелки или переключатели - курсор изменится*/
+
+label { 
+	cursor: pointer;
+}
+
+/*скрывает стандартные инпуты (чекбоксы) на странице*/
+
+.slider input { 
+	display: none;
+}
+
+/*позиция изображения при активации переключателя*/
+
+#switch1:checked ~ .slides .images {
+	margin-left: 0;
+}
+
+#switch2:checked ~ .slides .images {
+	margin-left: -100%;
+}
+
+#switch3:checked ~ .slides .images {
+	margin-left: -200%;
+}
+
+#switch4:checked ~ .slides .images {
+	margin-left: -300%;
+}
+
+/*прозрачность стрелок при наведении*/
+
+.controls label:hover { 
+    opacity: 0.6;
+    transition: 0.5s;
+}

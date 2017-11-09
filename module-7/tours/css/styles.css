@@ -135,7 +135,7 @@ label {
     margin-bottom: 10px;
     font-family: "Arial", sans-serif;
     font-size: 10px;
-    line-heigh: 15px;
+    line-height: 15px;
 }
   
 select {
@@ -151,6 +151,7 @@ select {
     appearance: none;
       -moz-appearance: none;
       -webkit-appearance: none;
+      
 }
   
   
