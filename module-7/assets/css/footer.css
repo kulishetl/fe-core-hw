@@ -44,6 +44,7 @@
 
 .useful-links a:hover {
     color: var(--color-3);
+    transition: var(--transition);
 }
 
 .useful-links ul:last-of-type li:first-of-type {
@@ -117,6 +118,7 @@ footer {
 
 .copyright a:hover {
     color: var(--color-1);
+    transition: var(--transition);
 }
 
 .copyright li {
