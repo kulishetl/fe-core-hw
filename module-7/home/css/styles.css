@@ -95,6 +95,10 @@ article {
     margin-bottom: 40px;
 }
 
+.middle {
+    margin-bottom: 50px;
+}
+
 .top-dest:hover {
     color: var(--color-3);
     transition: var(--tansition);
@@ -150,7 +154,7 @@ h3 {
     color: #cbc6c6;
 }
 
-.btn {
+.destination .btn {
     position: absolute;
     right: 10px;
     bottom: 18px;
@@ -169,7 +173,120 @@ h3 {
     border-radius: 5px;
 }
 
-.btn:hover {
+.destination .btn:hover {
+    color: #ffffff;
+    background-color: #38afe5;
+    transition: var(--transition);
+}
+
+.tabs {
+    width: 595px;
+    font-size: 0;
+}
+
+.tabs > section {
+    display: none;
+    padding-top: 40px;
+    padding-left: 12px;
+    padding-right: 11px;
+    border: 1px solid #e6e4e4;
+}
+
+.tabs > input {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: -1px;
+    margin-right: -1px;
+    font-family: var(--font-2);
+    font-size: 19px;
+    line-height: 33px;
+    color: #6b7488;
+    height: 33px;
+    width: 128px;
+    text-align: center; 
+    text-transform: uppercase;
+    border: 1px solid #e6e4e4;
+    background-color: #fcfafa;
+}
+
+label:hover {
+    color: var(--color-1);
+    transition: var(--transition);
+}
+
+.tabs > input:checked+label {
+    color: var(--color-3);
+    border-bottom: 1px solid #fff;
+    background: #fff;
+}
+
+#tab1:checked ~ .content-tab1,
+#tab2:checked ~ .content-tab2,
+#tab3:checked ~ .content-tab3 {
+    display: block;
+}
+
+.post-1,
+.post-2 {
+    position: relative;
+    padding-bottom: 55px;
+}
+
+.post-1 img,
+.post-2 img {
+    float: left;
+    margin-right: 19px;
+    margin-bottom: 10px;
+}
+
+.shortcut {
+    font-family: var(--font-4);
+    font-size: 15px;
+    color: var(--color-1);
+    margin-bottom: 15px;
+}
+
+.post {
+    font-family: var(--font-4);
+    font-size: 10px;
+    line-height: 15px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.click {
+    color: #fa7e7e;
+    text-decoration: none;
+}
+
+.click:hover {
+    color: var(--color-1);
+    text-decoration: underline;
+    transition: var(--transition);
+}
+
+.tabs .btn {
+    position: absolute;
+    right: 20px;
+    display: block;
+    width: 65px;
+    height: 24px;
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ffffff;
+    border: 1px solid #8b8c92;
+    border-radius: 5px;
+}
+
+.tabs .btn:hover {
     color: #ffffff;
     background-color: #38afe5;
     transition: var(--transition);
