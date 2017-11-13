@@ -62,7 +62,7 @@ h2 {
     flex-direction: column;
     flex-wrap: wrap;
     width: 285px;
-    height: 155px;
+    height: 180px;
     margin-bottom: 40px;
     font-family: var(--font-4);
     line-height: 15px;
@@ -72,7 +72,7 @@ h2 {
     width: 133px;
     height: 114px;
     margin-right: 15px;
-    margin-bottom: 41px;
+    margin-bottom: 45px;
 }
 
 .tour .shortcut {
