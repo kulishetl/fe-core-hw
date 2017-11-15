@@ -18,13 +18,14 @@
 body {
     padding-top: 44px;
     padding-bottom: 30px;
-    background: url("../../img/background.jpg") no-repeat;
+    background: url("../img/background.jpg") no-repeat;
     background-size: cover;
 }
 
 .wrapper {
     display: flex;
     flex-direction: column;
+    min-width: 320px;
     max-width: 1024px;
     margin: auto;
 }
@@ -32,42 +33,32 @@ body {
 article {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 902px;
-    padding: 58px 61px 100px 61px;
+    max-width: 88.09%;
+    min-width: 288px;
     background-color: var(--color-2);
 }
 
-h2 {
+h2  {
     width: 100%;
-    margin-bottom: 40px;
     font-family: var(--font-2);
-    font-size: 32px;
-    font-weight: normal;
-    color: var(--color-1);
     text-transform: uppercase;
-}
-
-a {
-    text-decoration: none;
-    transition: var(--transition);
+    font-size: 32px;
+    color: var(--color-1);
 }
 
 .gallery-image {
+    margin: 0 auto 20px;
+    min-width: 320px;
+    max-width: 480px;
     position: relative;
-    width: 286px;
-    height: 153px;
-    margin-bottom: 40px;
-    border: 1px solid #97b7c5;
 }
 
-.gallery-image a {
-    display: block;
-    width: 286px;
-    height: 153px;
-}
+img {
+    max-width: 100%;
+    height: auto;
+  }
 
-.overlay {
+  .overlay {
     position: absolute;
     top: 0;
     left: 0;
