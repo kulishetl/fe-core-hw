@@ -63,8 +63,8 @@ nav {
 }
 
 .menu .item:nth-child(2) {
-    margin-left: 15%;
     margin-right: 15%;
+    margin-left: 15%;
 }
 
 .item, .sub-item {
@@ -94,8 +94,8 @@ nav {
 }
 
 .sub-link {
-    line-height: 22px;
     font-size: 14px;
+    line-height: 22px;
     color: #6b7488;
 }
 
@@ -114,12 +114,11 @@ nav {
 
 .sub-menu {
     position: absolute;
-    background-color: var(--color-2);
     top: 30px;
     left: -5px;
-    padding: 0.5rem;
-    display: none;
     z-index: 1;
+    display: none;
+    padding: 0.5rem;
     background-color: #f2f2f3;
     border-radius: 3px;
 }
@@ -150,22 +149,22 @@ h2  {
     width: 100%;
     margin-bottom: 40px;
     font-family: var(--font-2);
-    font-weight: normal;
-    text-transform: uppercase;
     font-size: 28px;
+    font-weight: normal;
     color: var(--color-1);
+    text-transform: uppercase;
 }
 
 .gallery-image {
+    position: relative;
     display: flex;
     justify-content: center;
     max-width: 100%;
-    position: relative;
     margin-bottom: 2.5rem;
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
   }
 
@@ -180,11 +179,6 @@ img {
     opacity: 0;
     transform: scale(0);
     transition: var(--transition);
-}
-
-.overlay:hover > .zoom {
-    opacity: 1;
-    transform: scale(1);
 }
 
 .overlay:hover > .zoom {
@@ -213,15 +207,15 @@ img {
 
 .useful-links ul:last-of-type {
     display: flex;
-    margin-left: 0.5rem;
     justify-content: space-evenly;
     flex-basis: 100%;
+    margin-left: 0.5rem;
 }
 
 .useful-links li {
     position: relative;
-    list-style: none;
     margin-bottom: 10px;
+    list-style: none;
 }
 
 .useful-links li, 
@@ -352,8 +346,8 @@ footer li {
     }
 
     .wrapper {
-        margin-bottom: 15px;
         padding-top: 8.75rem;
+        margin-bottom: 15px;
     }
 
     nav {
@@ -379,8 +373,8 @@ footer li {
     }
 
     .sub-link {
-        line-height: 26px;
         font-size: 17px;
+        line-height: 26px;
     }
 
     article {
@@ -424,13 +418,13 @@ footer li {
     }
 
     .useful-links ul:last-of-type li:nth-of-type(n+2) {
-        font-size: 12px;
         margin-left: 0;
+        font-size: 12px;
     }
 
     .social li {
-        transform: scale(1);
         margin-right: 12px;
+        transform: scale(1);
     }
 
     .copyright li, .copyright a {
@@ -486,8 +480,8 @@ footer li {
     }
 
     .sub-link {
-        line-height: 30px;
         font-size: 20px;
+        line-height: 30px;
     }
 
 
