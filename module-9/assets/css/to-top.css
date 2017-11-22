@@ -1,0 +1,51 @@
+:root {
+    --bord-rad: 50%;
+    --color-1: #263555;
+    --color-2: #ffffff;
+    --color-3: #38afe5;
+    --font-1: "Dorsa", sans-serif;
+    --font-2: "Pathway Gothic One", sans-serif;
+    --font-3: "Open Sans Condensed", sans-serif;
+    --font-4: "Arial", sans-serif;
+    --tansition: 0.5s;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.to-top {
+    position: fixed;
+    right: 6px;
+    bottom: 8px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAASElEQVQ4y2NgGAWDGPxv+N9AmnIQaCBF+R8gJE4LWPnv/2H/w4nSAlMOZhPWAlUeCucT0gLU8Pt/CIoISEsdPju0CIuMgsEAAKEwSaIZoavCAAAAAElFTkSuQmCC") no-repeat;
+    background-color: var(--color-3);
+    background-position: 3px 2px;
+    border-radius: var(--bord-rad); 
+    transform: scale(0.8);  
+}
+
+.to-top:hover {
+    opacity: 0.55;
+    transition: var(--tansition);
+}
+
+@media screen and (min-width: 768px) {
+    .to-top {
+        right: 8px;
+        bottom: 12px;
+        transform: scale(0.93); 
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .to-top {
+        right: 15px;
+        bottom: 16px;
+        transform: scale(1); 
+    }
+}
