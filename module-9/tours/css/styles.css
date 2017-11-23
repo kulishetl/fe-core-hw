@@ -149,11 +149,6 @@ article {
     background-color: #ffffff;
 }
 
-article .top {
-    margin-bottom: 3rem;
-    border-bottom: 1px solid #dedbdb;
-}
-
 h2 {
     margin-bottom: 1.7rem;
     font-family: var(--font-2);
@@ -163,171 +158,10 @@ h2 {
     text-transform: uppercase;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 1.4rem;
-}
 
-.shortcut, a {
-    font-size: 14px;        
-    line-height: 19px;
-    color: var(--color-1);
-}
 
-a:hover {
-    color: var(--color-3);
-    text-decoration: none;
-    transition: var(--transition);
-}
 
-.main1 .shortcut {
-    margin-bottom: 0.9rem;
-}
 
-.main1 {
-    margin-bottom: 1.8rem;
-}
-
-.information {
-    font-size: 12px;
-    line-height: 17px;
-    color: var(--color-4);
-}
-
-.aside1 h2 {
-    margin-bottom: 1.1rem;
-}
-
-ol {
-    display: flex;
-    justify-content: flex-end;
-    counter-reset: list 0;
-    margin-bottom: 33px;
-}
-
-ol li {
-    position: relative;;
-}
-
-ol li::before {
-    counter-increment: list;
-    content: counter(list) "";
-    display: inline-block;
-    left: -20px;
-    width: 24px;
-    height: 26px;
-    position: absolute;
-    margin-top: 10px;
-    margin-right: 9px;
-    line-height: 26px;
-    color: var(--color-2);
-    text-align: center;
-    vertical-align: top;
-    background-color: var(--color-3);
-    border: 1px solid #4994b5;
-    border-radius: 13px;
-}
-
-.aside1 .shortcut {
-    margin-bottom: 0.7rem;
-}
-
-.main2 h2 {
-    margin-bottom: 0.8rem;
-}
-
-.main2 ul {
-    margin-bottom: 3.5rem;
-}
-
-.main2 .information {
-    margin-bottom: 1.8rem;
-}
-
-.main2 ul li {
-    margin-bottom: 8px;
-}
-
-.main2 ul li:last-of-type {
-    margin-bottom: 0;
-}
-
-.main2 ul a {
-    line-height: 20px;
-}
-
-.main2 ul li::before {
-    content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAKCAMAAAC38k/IAAAABlBMVEU4r+X///9eJqNQAAAAIElEQVR4AWNgRAJYOQwoMgwoyhhAiAEOkGVw6GHAsAcAG2EAaeJ5cVwAAAAASUVORK5CYII=");
-    display: inline-block;
-    width: 15px;
-    height: 10px;
-    margin-right: .5rem;
-    line-height: 10px;
-}
-
-.aside2 h2 {
-    margin-bottom: 23px;
-}
-
-.aside2 .quote {
-    position: relative;
-    padding: 1px 15px 12px;
-    margin-bottom: 1.4rem;
-    background-color: #fcfafa;
-    border: 1px solid #dedbdb;
-}
-
-.aside2 .quote::before {
-    content: "";
-    position: absolute;
-    width: 0; 
-    height: 0; 
-    left: 50%;
-    top: 100%;
-    margin-left: calc((var(--width-triangle)/2) - var(--width-triangle));
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid #dedbdb;
-}
-
-.aside2 .quote::after {
-    content: "";
-    position: absolute;
-    width: 0; 
-    height: 0; 
-    left: 50%;
-    top: 99%;
-    margin-left: calc((var(--width-triangle)/2) - var(--width-triangle));
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid #fcfafa;
-}
-
-.aside2 .shortcut {
-    text-indent: 10px;
-}
-
-.aside2 .shortcut::before {
-    content: "\201c";
-}
-.aside2 .shortcut::after {
-    content: "\201d";
-}
-
-.aside2 .text,
-.aside2 .information {
-    text-align: center;
-}
-
-.aside2 .information {
-    font-size: 10px;
-}
-
-.aside2 .text {
-    font-size: 14px;
-    margin-bottom: 0.3rem;
-}
 
 .useful-links {
     padding: 1.0625rem 2.5rem 1rem;
@@ -468,7 +302,6 @@ footer li {
     border-left: none;
 }
 
-
 @media screen and (min-width: 768px) {
     :root {
         --diam-logo: 101px;
@@ -527,31 +360,6 @@ footer li {
     h2 {
         margin-bottom: 2.2rem;
         font-size: 28px;
-    }
-
-    .main1 {
-        margin-bottom: 3.6rem;
-    }
-
-    img {
-        float: left;
-        margin-right: 1.5rem;
-        margin-bottom: 0.1rem;
-    }
-
-    .shortcut, a {
-        font-size: 15px;        
-        line-height: 19px;
-    }
-
-    .information {
-        font-size: 13px;
-        line-height: 19px;
-    }
-
-    ol {
-        display: flex;
-        justify-content: space-around;
     }
 
     .useful-links {
