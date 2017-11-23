@@ -11,6 +11,7 @@
     --diam-logo: 77px;
     --font-size-logo: 33px;
     --transition: 0.5s;
+    --width-triangle: 20px;
 }
 
 * {
@@ -144,17 +145,17 @@ nav {
 }
 
 article {
-    padding: 3.3125rem 2.375rem 2rem;
+    padding: 3.3125rem 1.4rem 2rem;
     background-color: #ffffff;
 }
 
 article .top {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     border-bottom: 1px solid #dedbdb;
 }
 
 h2 {
-    margin-bottom: 2rem;
+    margin-bottom: 1.7rem;
     font-family: var(--font-2);
     font-size: 25px;
     font-weight: normal;
@@ -165,6 +166,7 @@ h2 {
 img {
     max-width: 100%;
     height: auto;
+    margin-bottom: 1.4rem;
 }
 
 .shortcut, a {
@@ -180,11 +182,11 @@ a:hover {
 }
 
 .main1 .shortcut {
-    margin-bottom: 1rem;
+    margin-bottom: 0.9rem;
 }
 
 .main1 {
-    margin-bottom: 2rem;
+    margin-bottom: 1.8rem;
 }
 
 .information {
@@ -193,11 +195,15 @@ a:hover {
     color: var(--color-4);
 }
 
+.aside1 h2 {
+    margin-bottom: 1.1rem;
+}
+
 ol {
     display: flex;
     justify-content: flex-end;
     counter-reset: list 0;
-    margin-bottom: 42px;
+    margin-bottom: 33px;
 }
 
 ol li {
@@ -223,8 +229,24 @@ ol li::before {
     border-radius: 13px;
 }
 
+.aside1 .shortcut {
+    margin-bottom: 0.7rem;
+}
+
+.main2 h2 {
+    margin-bottom: 0.8rem;
+}
+
+.main2 ul {
+    margin-bottom: 3.5rem;
+}
+
+.main2 .information {
+    margin-bottom: 1.8rem;
+}
+
 .main2 ul li {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .main2 ul li:last-of-type {
@@ -232,7 +254,7 @@ ol li::before {
 }
 
 .main2 ul a {
-    line-height: 23px;
+    line-height: 20px;
 }
 
 .main2 ul li::before {
@@ -240,13 +262,275 @@ ol li::before {
     display: inline-block;
     width: 15px;
     height: 10px;
-    margin-right: 7px;
+    margin-right: .5rem;
     line-height: 10px;
 }
 
+.aside2 h2 {
+    margin-bottom: 23px;
+}
+
+.aside2 .quote {
+    position: relative;
+    padding: 1px 15px 12px;
+    margin-bottom: 1.4rem;
+    background-color: #fcfafa;
+    border: 1px solid #dedbdb;
+}
+
+.aside2 .quote::before {
+    content: "";
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    left: 50%;
+    top: 100%;
+    margin-left: calc((var(--width-triangle)/2) - var(--width-triangle));
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #dedbdb;
+}
+
+.aside2 .quote::after {
+    content: "";
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    left: 50%;
+    top: 99%;
+    margin-left: calc((var(--width-triangle)/2) - var(--width-triangle));
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #fcfafa;
+}
+
+.aside2 .shortcut {
+    text-indent: 10px;
+}
+
+.aside2 .shortcut::before {
+    content: "\201c";
+}
+.aside2 .shortcut::after {
+    content: "\201d";
+}
+
+.aside2 .text,
+.aside2 .information {
+    text-align: center;
+}
+
+.aside2 .information {
+    font-size: 10px;
+}
+
+.aside2 .text {
+    font-size: 14px;
+    margin-bottom: 0.3rem;
+}
+
+.useful-links {
+    padding: 1.0625rem 2.5rem 1rem;
+    margin-bottom: 1.625rem;
+    background-color: #30455b;
+}
+
+.useful-links ul {
+    margin-bottom: 0.9375rem;
+}
+
+.useful-links .contacts {
+    display: flex;
+    justify-content: space-evenly;
+    flex-basis: 100%;
+    margin-left: 0.5rem;
+}
+
+.useful-links .contacts li:nth-of-type(n+2) {
+    margin-bottom: 0;
+    font-family: var(--font-4);
+    font-size: 10px;
+    line-height: 19px;
+}
+
+.useful-links li {
+    position: relative;
+    list-style: none;
+}
+
+.useful-links li, 
+.useful-links a {
+    font-family: var(--font-3); 
+    color: var(--color-2);
+    text-transform: uppercase;
+}
+
+.material-icons {
+    position: absolute;
+    left: -27px;
+    top: -3px;
+}
+
+.useful-links a {
+    font-size: 14px;
+    line-height: 19px;
+    text-decoration: none;
+}
+
+.useful-links a:hover {
+    color: var(--color-3);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.useful-links .contacts li:first-of-type {
+    font-size: 14px;
+}
+
+.useful-links .contacts li:nth-of-type(n+2) {
+    margin-bottom: 0;
+    font-family: var(--font-4);
+    font-size: 10px;
+    line-height: 19px;
+}
+
+.useful-links ul:last-of-type li:last-of-type {
+    text-transform: none;
+}
+
+footer li {
+    list-style: none;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    list-style: var(--list-style)
+}
+
+.social li {
+    transform: scale(0.65);
+}
+
+.social a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url("../../assets/img/sprite.png") no-repeat;
+    
+}
+
+.social a:hover {
+    filter: invert(100%);
+    transition: var(--transition);
+}
+
+.social .facebook {
+    background-position: -41px 0;
+}
+  
+.social .google {
+    background-position: -82px 0;
+}
+  
+.social .linkedin {
+    background-position: -123px 0;
+}
+
+.copyright {
+    display: flex;
+    list-style: var(--list-style);
+}
+
+.copyright li, .copyright a {
+  font-family: var(--font-4);
+  font-size: 9px;
+  line-height: 18px;
+  color: var(--color-2);
+}
+
+.copyright a {
+  text-decoration: none;
+}
+
+.copyright a:hover {
+  color: var(--color-1);
+  transition: var(--transition);
+}
+
+.copyright li {
+    padding-right: 0.125rem;
+    padding-left: 0.125rem;
+    border-left: 1px solid var(--color-2);
+}
+
+.copyright li:first-of-type {
+    border-left: none;
+  }
+
+
 @media screen and (min-width: 768px) {
+    :root {
+        --diam-logo: 101px;
+        --font-size-logo: 44px;
+    }
+
+    .wrapper {
+        padding-top: 8.5rem;
+        margin-bottom: 0.9375rem;
+    }
+
+    nav {
+        padding-left: 3.4375rem;
+        padding-right: 3.4375rem;
+        margin-bottom: 0.125rem;
+    }
+
+    .logo {
+        top: -116px;
+    }
+
+    .menu {
+        margin-bottom: 0.625rem;
+    }
+
+    .link {
+        font-size: 24px;
+    }
+
+    .sub-menu {
+        top: 35px;
+        left: -8px;
+    }
+
+    .sub-menu:before {
+        top: -5px;
+        left: 28px;
+    }
+
+    .sub-link {
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    .link {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    article {
+        padding-top: 5rem;
+        padding-left: 2rem;
+        padding-bottom: 5.5rem;
+    }
+
     h2 {
+        margin-bottom: 2.2rem;
         font-size: 28px;
+    }
+
+    .main1 {
+        margin-bottom: 3.6rem;
     }
 
     img {
@@ -269,9 +553,90 @@ ol li::before {
         display: flex;
         justify-content: space-around;
     }
+
+    .useful-links {
+        padding: 2rem 3.5rem 1.4rem 2.0rem;
+        margin-bottom: 20px;
+    }
+
+    .useful-links li {
+        margin-bottom: 0.1875rem;
+    }
+
+    .useful-links a {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .useful-links .contacts li:first-of-type {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .useful-links .contacts {
+        display: block;
+        flex-basis: auto;
+    }
+
+    .useful-links .contacts li:nth-of-type(n+2) {
+        font-size: 12px;
+    }
+
+    .social {
+        padding-left: 1.25rem;
+        padding-right: 0.4375rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .social li {
+        margin-right: 0.75rem;
+        transform: scale(1);
+    }
+
+    .copyright li, .copyright a {
+        font-size: 12px;
+    }
 }
 
 @media screen and (min-width: 992px) {
+    :root {
+        --diam-logo: 140px;
+        --font-size-logo: 60px;
+    }
+
+    .wrapper {
+        padding-top: 5.875rem;
+        margin-bottom: 0.9375px;
+    }
+
+    nav {
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 6rem;
+    }
+
+    .menu:first-of-type {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 7.6rem;
+        padding-left: 3.3rem;
+    }
+
+    .menu:last-of-type {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 3.1rem;
+        padding-left: 7.6rem;
+    }
+
+    .logo {
+        top: -50px;
+    }
+
+    .link {
+        font-size: 28px;
+    }
+
     h2 {
         font-size: 32px;
     }
@@ -279,5 +644,10 @@ ol li::before {
     ol {
         display: flex;
         justify-content: flex-end;
+    }
+
+    .useful-links {
+        padding: 2.4375rem 8.9rem 1rem 8.0rem;
+        margin-bottom: 1.5625rem;
     }
 }
