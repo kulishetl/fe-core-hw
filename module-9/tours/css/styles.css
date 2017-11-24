@@ -158,10 +158,155 @@ h2 {
     text-transform: uppercase;
 }
 
+.tour {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
 
+.tour div{
+    flex-basis: 48.5%;
+}
 
+.img-tour {
+    margin-right: 18px;
+}
 
+img {
+    max-width: 100%;
+    height: auto;
+}
 
+.shortcut,
+.information,
+.cost,
+.det {
+    font-family: var(--font-4);
+    line-height: 21.35px;
+}
+
+.shortcut {
+    margin-bottom: 17px;
+    font-size: 17px;
+    color: var(--color-1);
+}
+
+.information {
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #4e5050;
+}
+
+.cost {
+    display: block;
+    margin-bottom: 14px;
+    font-size: 18px;
+    color: var(--color-3);
+}
+
+.cost:hover {
+    color: var(--color-1);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.tour .cost:nth-of-type(2) {
+    margin-bottom: 27px;
+}
+
+.det {
+    display: block;
+    width: 95px;
+    height: 30px;
+    font-size: 15x;
+    color: #000000;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #c4bfbf;
+    border-radius: 8px;
+}
+
+.det:hover {
+    color: var(--color-3);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.select-form {
+    margin-bottom: 32px;
+}
+
+.operator {
+    padding-left: 20%;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: "Arial", sans-serif;
+    font-size: 10px;
+    line-height: 15px;
+}
+  
+select {
+    width: 211px;
+    height: 20px;
+    margin-bottom: 10px;
+    font-family: "Arial", sans-serif;
+    font-size: 10px;
+    color: #868f8f;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAMAAABhEH5lAAAAMFBMVEUAAADNzc3///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADNzc0WdifMAAAAD3RSTlMAAAAEGSgpOzw92Nvc8/TFQKMIAAAARUlEQVR4Ab3IwRJAMAwG4R9BBfX+b6t7SXA23cvOfLqG8dPvpEnUFrQcK7Ltc5D5WZpUtyCZ14IoCUMehCEvkiFJWQe6AbmzA/o4Q1aKAAAAAElFTkSuQmCC") no-repeat 192px 0;
+    background-color: #fcfafa;
+    border: 1px solid #d2cdcd;
+    appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      
+}
+  
+option {
+    font-size: 10px;
+    color: #ffffff; 
+    background-color: #e3e2e2;
+}
+  
+input[type="submit"]{
+    display: block;
+    width: 64px;
+    height: 22px;
+    margin-top: 5px;
+    font-family: "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    background-color: #ffffff;
+    border: 1px solid #b1aaaa;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    color: #ffffff;
+    background-color: var(--color-3);
+    transition: var(--transition);
+}
+  
+.right a {
+    display: block;
+    margin-bottom: 10px;
+    font-family: "Arial", sans-serif;
+    font-size: 10px;
+    color: #38afe5;
+    text-decoration: none;
+}
+  
+.right a:hover {
+    color: var(--color-1);
+    transition: var(--transition);
+}
+
+.button {
+    margin-bottom: 20px;
+}
 
 .useful-links {
     padding: 1.0625rem 2.5rem 1rem;
@@ -362,6 +507,43 @@ footer li {
         font-size: 28px;
     }
 
+    .shortcut,
+    .information,
+    .cost,
+    .det {
+        line-height: 18.11px;
+    }
+
+    .shortcut {
+        margin-bottom: 12px;
+        font-size: 14px; 
+    }
+
+    .information {
+        margin-bottom: 5px;
+        font-size: 13px;
+    }
+
+    .cost {
+        margin-bottom: 9px;
+        font-size: 15px;
+    }
+
+    .tour .cost:nth-of-type(2) {
+        margin-bottom: 20px;
+    }
+
+    .det {
+        width: 75px;
+        height: 26px;
+        font-size: 13px;
+        line-height: 26px;
+    }
+
+    .operator {
+        padding-left: 0;
+    }
+
     .useful-links {
         padding: 2rem 3.5rem 1.4rem 2.0rem;
         margin-bottom: 20px;
@@ -448,6 +630,39 @@ footer li {
     h2 {
         font-size: 32px;
         margin-bottom: 2.2rem;
+    }
+
+    .shortcut,
+    .information,
+    .cost,
+    .det {
+        line-height: 15.2px;
+    }
+
+    .shortcut {
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+
+    .information {
+        margin-bottom: 3px;
+        font-size: 10px;
+    }
+
+    .cost {
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+
+    .tour .cost:nth-of-type(2) {
+        margin-bottom: 25px;
+    }
+
+    .det {
+        width: 63px;
+        height: 22px;
+        font-size: 11px;
+        line-height: 22px;
     }
 
     ol {
