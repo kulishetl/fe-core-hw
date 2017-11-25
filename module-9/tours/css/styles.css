@@ -145,14 +145,18 @@ nav {
 }
 
 article {
-    padding: 3.3125rem 1.4rem 2rem;
+    padding: 3.3125rem 1.4rem 1.5rem;
     background-color: #ffffff;
 }
 
+.left {
+    margin-bottom: 2.5rem;
+}
+
 h2 {
-    margin-bottom: 1.7rem;
+    margin-bottom: 2.1rem;
     font-family: var(--font-2);
-    font-size: 25px;
+    font-size: 28px;
     font-weight: normal;
     color: var(--color-1);
     text-transform: uppercase;
@@ -166,7 +170,7 @@ h2 {
 }
 
 .tour div{
-    flex-basis: 48.5%;
+    flex-basis: 47.5%;
 }
 
 .img-tour {
@@ -193,14 +197,14 @@ img {
 }
 
 .information {
-    margin-bottom: 6px;
+    margin-bottom: 2px;
     font-size: 14px;
     color: #4e5050;
 }
 
 .cost {
     display: block;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
     font-size: 18px;
     color: var(--color-3);
 }
@@ -237,8 +241,10 @@ img {
     margin-bottom: 32px;
 }
 
+
 .operator {
     padding-left: 20%;
+    margin-bottom: 4.2rem;
 }
 
 label {
@@ -497,14 +503,22 @@ footer li {
     }
 
     article {
-        padding-top: 5rem;
+        padding-top: 4.8rem;
         padding-left: 2rem;
-        padding-bottom: 5.5rem;
+        padding-bottom: 2.6rem;
     }
 
     h2 {
-        margin-bottom: 2.2rem;
+        margin-bottom: 3.4rem;
         font-size: 28px;
+    }
+
+    .tour {
+        margin-bottom: 2.6rem;
+    }
+
+    .tour div{
+        flex-basis: 49%;
     }
 
     .shortcut,
@@ -540,13 +554,25 @@ footer li {
         line-height: 26px;
     }
 
+    .left {
+        margin-bottom: 2.8rem;
+    }
+
+    .right h2 {
+        margin-bottom: 2.1rem;
+    }
+
     .operator {
         padding-left: 0;
     }
 
+    label {
+        margin-bottom: 0.3rem;
+    }
+
     .useful-links {
         padding: 2rem 3.5rem 1.4rem 2.0rem;
-        margin-bottom: 20px;
+        margin-bottom: 2.5rem;
     }
 
     .useful-links li {
