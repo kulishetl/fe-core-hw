@@ -1,0 +1,227 @@
+:root {
+    --font-1: "Dorsa", sans-serif;
+    --font-2: "Pathway Gothic One", sans-serif;
+    --font-3: "Open Sans Condensed", sans-serif;
+    --font-4: "Arial", sans-serif;
+    --color-1: #263555;
+    --color-2: #ffffff;
+    --color-3: #38afe5;
+    --bord-rad: 50%;
+    --diam-logo: 77px;
+    --font-size-logo: 33px;
+    --transition: 0.5s;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("../img/background.jpg") no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    max-width: 1024px;
+    padding-top: 125px;
+    padding-bottom: 30px;
+    margin: auto;
+}
+
+.wrapper__nav {
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.nav__logo {
+    position: absolute;
+    top: -102px;
+    left: 50%;
+    width: var(--diam-logo);
+    height: var(--diam-logo);
+    margin-left: calc((var(--diam-logo) / 2) - var(--diam-logo));
+    font-family: var(--font-1);
+    font-size: var(--font-size-logo);
+    line-height: var(--diam-logo);
+    color: var(--color-1);
+    text-align: center;
+    text-transform: uppercase;    
+    background-color: var(--color-2);
+    border-radius: var(--bord-rad);
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    padding-right: 6.25rem;
+    padding-left: 7.5rem;
+}
+
+.nav-menu__item:nth-child(2) {
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.nav-menu__item,
+.sub-menu__item {
+    list-style: none;
+}
+
+.sub-menu__item {
+    text-align: center;
+}
+
+.nav-menu__link,
+.sub-menu__link {
+    font-family: var(--font-2);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-menu__link {
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--color-2);
+}
+
+.nav-menu__link:hover {
+    color: var(--color-1);
+    transition: var(--transition);
+}
+
+.sub-menu__link {
+    font-size: 14px;
+    line-height: 22px;
+    color: #6b7488;
+}
+
+.sub-menu__link:hover {
+    color: var(--color-3);
+    transition: var(--transition);
+}
+
+.nav-menu__item:nth-of-type(2) {
+    position: relative;
+}
+
+.sub:hover>.sub-menu {
+    display: block;
+}
+
+.sub-menu {
+    position: absolute;
+    top: 30px;
+    left: -5px;
+    z-index: 1;
+    display: none;
+    padding: 0.5rem;
+    background-color: #f2f2f3;
+    border-radius: 3px;
+}
+
+.sub-menu:before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 21px;
+    display: inline-block;
+    width: 0; 
+    height: 0; 
+    border-right: 3px solid transparent;
+    border-bottom: 4px solid #f2f2f3;
+    border-left: 2px solid transparent;
+}
+
+.wrapper__gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: 3.5rem 2.3128rem 4.75rem;
+    background-color: var(--color-2);
+}
+
+.gallery__title {
+    width: 100%;
+    margin-bottom: 40px;
+    font-family: var(--font-2);
+    font-size: 28px;
+    font-weight: normal;
+    color: var(--color-1);
+    text-transform: uppercase;
+}
+
+.gallery__image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+.gallery__image--link {
+    display: block;
+}
+
+.gallery__image--link:hover .gallery__image--pic {
+    filter: brightness(0.6);
+    transition: 0.5s;
+}
+
+.gallery__image--zoom {
+    position: absolute;
+    width: 20%;
+    height: 30%;
+    left: 50%;
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    background: url("../img/zoom-in.svg") no-repeat;
+}
+
+.gallery__image--link:hover > .gallery__image--zoom {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.gallery__image--photo {
+    width: 100%;
+    height: auto;
+}
+
+.medium,
+.large {
+    display: none;
+}
+
+.twitter,
+.facebook,
+.google,
+.linkedin {
+    display: block;
+    width: 26px;
+    height: 26px;
+}
+
+.circle {
+    fill: #ffffff;
+}
+
+.letter {
+    fill: #e4b265;
+}
+
+.social a:hover .circle {
+    fill: #C97064;
+    transition: 0.5s;
+}
+
+.social a:hover .letter {
+    fill: #ffffff;
+    transition: 0.5s;
+}
