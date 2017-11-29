@@ -1,0 +1,35 @@
+.menu {
+  display: flex;
+  justify-content: space-around;
+  width: 60rem;
+  padding: 2.5rem 0;
+  margin: auto;
+  margin-top: 10rem;
+  background-color: white; }
+
+.menu__item {
+  width: 10rem;
+  height: 10rem;
+  list-style: none;
+  cursor: pointer; }
+  .menu__item:hover {
+    filter: brightness(0.6);
+    transition: 0.4s; }
+
+body {
+  background-color: gray; }
+
+.menu__item--first {
+  background: url("https://cdn.worldvectorlogo.com/logos/html5.svg") no-repeat;
+  background-size: contain; }
+.menu__item--second {
+  background: url("https://cdn.worldvectorlogo.com/logos/css-3.svg") no-repeat;
+  background-size: contain; }
+.menu__item--third {
+  background: url("https://cdn.worldvectorlogo.com/logos/pug.svg") no-repeat;
+  background-size: contain; }
+.menu__item--fourth {
+  background: url("https://cdn.worldvectorlogo.com/logos/sass-1.svg") no-repeat;
+  background-size: contain; }
+
+/*# sourceMappingURL=style.css.map */
