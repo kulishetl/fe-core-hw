@@ -10,4 +10,26 @@
 @import 'material-icons';
 @import 'footer';
 @import 'social-menu';
-@import 'styles';
+@import 'copyright-menu';
+@import 'to-top';
+
+//styles for width: 768px
+@media screen and (min-width: 768px) {
+    @import '768/body+wrapper-768';
+    @import '768/nav-768';
+    @import '768/gallery-768';
+    @import '768/useful-links-768';
+    @import '768/material-icons-768';
+    @import '768/social-menu-768';
+    @import '768/copyright-menu-768';
+    @import '768/to-top-768';
+}
+
+//styles for width: 1024px
+@media screen and (min-width: 1024px) {
+    @import '1024/body+wrapper-1024';
+    @import '1024/nav-1024';
+    @import '1024/gallery-1024';
+    @import '1024/useful-links-1024';
+    @import '1024/to-top-1024';
+}

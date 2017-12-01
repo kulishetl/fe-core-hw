@@ -1,0 +1,14 @@
+.gallery {
+    padding: 5rem 2.875rem 3rem;
+
+    &__title {
+        margin-bottom: 2.4rem;
+    }
+    &__image--medium {
+        display: block;
+    }
+    &__image--small,
+    &__image--medium {
+        width: 48.96%;
+    }
+}

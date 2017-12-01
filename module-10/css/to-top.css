@@ -43,7 +43,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .wrapper__to-top {
+    .to-top {
         right: 15px;
         bottom: 16px;
         transform: scale(1); 
