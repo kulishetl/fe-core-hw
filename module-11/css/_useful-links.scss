@@ -1,0 +1,41 @@
+.useful-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 6.7rem 1.875rem;
+    background-color: #30455b;
+
+    &-menu {
+        margin-bottom: 0.625rem;
+
+        &__last {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;        
+            flex-basis: 100%;
+        }
+        &__item {
+            margin-bottom: 0.45rem;
+            font-family: $f3; 
+            color: $c2;
+            text-transform: uppercase;
+            list-style: $l-s;
+
+            &--first {
+                font-size: 14px;
+            }
+
+            &--second {
+                margin-bottom: 0;
+                margin-left: 1rem;
+                font-family: $f4;
+                @include text (10px, 19px);
+            }
+
+            &--third {
+                @extend .useful-links-menu__item--second;
+                text-transform: none;
+            }
+        }
+    }
+}

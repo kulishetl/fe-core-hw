@@ -1,4 +1,17 @@
 @mixin text ($f-s, $l-h) {
     font-size: $f-s;
     line-height: $l-h;
-  }
+}
+
+@mixin dimensions ($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin logo-param ($wl, $hl, $ml, $fsl, $lnl) {
+    width: $wl;
+    height: $hl;
+    margin-left: $ml;
+    font-size: $fsl;
+    line-height: $lnl;
+}

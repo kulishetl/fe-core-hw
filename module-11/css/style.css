@@ -26,9 +26,9 @@ body {
     width: 77px;
     height: 77px;
     margin-left: -38.5px;
-    font-family: "Dorsa", sans-serif;
     font-size: 33px;
     line-height: 77px;
+    font-family: "Dorsa", sans-serif;
     color: #263555;
     text-align: center;
     text-transform: uppercase;
@@ -55,5 +55,116 @@ body {
       .nav-menu__link:hover {
         color: #263555;
         transition: 0.5s; }
+
+.sub-menu {
+  position: absolute;
+  top: 30px;
+  left: -5px;
+  z-index: 1;
+  display: none;
+  padding: 0.5rem;
+  background-color: #f2f2f3;
+  border-radius: 3px; }
+  .sub-menu:before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 21px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-right: 3px solid transparent;
+    border-bottom: 4px solid #f2f2f3;
+    border-left: 2px solid transparent; }
+  .sub-menu__item {
+    list-style: none;
+    text-align: center; }
+  .sub-menu__link {
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: #6b7488;
+    text-decoration: none;
+    text-transform: uppercase; }
+    .sub-menu__link:hover {
+      color: #38afe5;
+      transition: 0.5s; }
+
+.sub:hover > .sub-menu {
+  display: block; }
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 100%;
+  padding: 3.3rem 2.3128rem 2.5rem;
+  background-color: #ffffff; }
+  .gallery__title {
+    width: 100%;
+    margin-bottom: 2rem;
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    color: #263555;
+    text-transform: uppercase; }
+  .gallery__image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    margin-bottom: 2.2rem; }
+    .gallery__image--medium, .gallery__image--large {
+      display: none; }
+  .gallery__link {
+    display: block; }
+    .gallery__link:hover .gallery__pic {
+      filter: brightness(0.5);
+      transition: 0.5s; }
+    .gallery__link:hover > .gallery__zoom {
+      opacity: 1;
+      transition: 0.5s; }
+  .gallery__zoom {
+    position: absolute;
+    width: 20%;
+    height: 30%;
+    left: 50%;
+    top: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    background: url("../img/zoom-in.svg") no-repeat; }
+  .gallery__photo {
+    width: 100%;
+    height: auto; }
+
+.useful-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 6.7rem 1.875rem;
+  background-color: #30455b; }
+  .useful-links-menu {
+    margin-bottom: 0.625rem; }
+    .useful-links-menu__last {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      flex-basis: 100%; }
+    .useful-links-menu__item {
+      margin-bottom: 0.45rem;
+      font-family: "Open Sans Condensed", sans-serif;
+      color: #ffffff;
+      text-transform: uppercase;
+      list-style: none; }
+      .useful-links-menu__item--first {
+        font-size: 14px; }
+      .useful-links-menu__item--second, .useful-links-menu__item--third {
+        margin-bottom: 0;
+        margin-left: 1rem;
+        font-family: "Arial", sans-serif;
+        font-size: 10px;
+        line-height: 19px; }
+      .useful-links-menu__item--third {
+        text-transform: none; }
 
 /*# sourceMappingURL=style.css.map */

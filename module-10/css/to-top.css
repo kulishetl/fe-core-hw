@@ -15,7 +15,7 @@
     margin: 0;
 }
 
-.wrapper__to-top {
+.to-top {
     position: fixed;
     right: 6px;
     bottom: 8px;
@@ -29,13 +29,13 @@
     transform: scale(0.8);  
 }
 
-.wrapper__to-top:hover {
+.to-top:hover {
     opacity: 0.55;
     transition: var(--tansition);
 }
 
 @media screen and (min-width: 768px) {
-    .wrapper__to-top {
+    .to-top {
         right: 8px;
         bottom: 12px;
         transform: scale(0.93); 

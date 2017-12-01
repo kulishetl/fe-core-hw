@@ -1,6 +1,10 @@
 //Utils
 @import 'variables';
 @import 'mixins';
+
+//styles for width: 480px
 @import 'body+wrapper';
 @import 'nav';
+@import 'gallery';
+@import 'useful-links';
 @import 'styles';
