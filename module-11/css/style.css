@@ -32,4 +32,22 @@ body {
   background: url("https://cdn.worldvectorlogo.com/logos/sass-1.svg") no-repeat;
   background-size: contain; }
 
+@media screen and (min-width: 768px) {
+  body {
+    background-color: gray; }
+
+  .menu__item--first {
+    background: url("https://cdn.worldvectorlogo.com/logos/html5.svg") no-repeat;
+    background-size: contain;
+    background-color: gray; }
+  .menu__item--second {
+    background: url("https://cdn.worldvectorlogo.com/logos/css-3.svg") no-repeat;
+    background-size: contain; }
+  .menu__item--third {
+    background: url("https://cdn.worldvectorlogo.com/logos/pug.svg") no-repeat;
+    background-size: contain; }
+  .menu__item--fourth {
+    background: url("https://cdn.worldvectorlogo.com/logos/sass-1.svg") no-repeat;
+    background-size: contain; } }
+
 /*# sourceMappingURL=style.css.map */

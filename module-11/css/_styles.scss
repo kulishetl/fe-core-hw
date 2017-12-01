@@ -2,6 +2,7 @@ body {
     background-color: $bg;
   }
   
+  
   .menu {
     @extend %list;
     &__item {
