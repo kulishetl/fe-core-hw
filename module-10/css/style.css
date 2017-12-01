@@ -486,7 +486,7 @@ body {
         display: none;
     }
 
-    .useful-links-menu__item--hidden {
+    .useful-links-menu__hidden {
         display: inline;
     }
 
