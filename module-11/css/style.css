@@ -1,53 +1,59 @@
-.menu {
-  display: flex;
-  justify-content: space-around;
-  width: 60rem;
-  padding: 2.5rem 0;
-  margin: auto;
-  margin-top: 10rem;
-  background-color: white; }
-
-.menu__item {
-  width: 10rem;
-  height: 10rem;
-  list-style: none;
-  cursor: pointer; }
-  .menu__item:hover {
-    filter: brightness(0.6);
-    transition: 0.4s; }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
 
 body {
-  background-color: gray; }
+  background: url("../img/background.jpg") no-repeat;
+  background-size: cover; }
 
-.menu__item--first {
-  background: url("https://cdn.worldvectorlogo.com/logos/html5.svg") no-repeat;
-  background-size: contain; }
-.menu__item--second {
-  background: url("https://cdn.worldvectorlogo.com/logos/css-3.svg") no-repeat;
-  background-size: contain; }
-.menu__item--third {
-  background: url("https://cdn.worldvectorlogo.com/logos/pug.svg") no-repeat;
-  background-size: contain; }
-.menu__item--fourth {
-  background: url("https://cdn.worldvectorlogo.com/logos/sass-1.svg") no-repeat;
-  background-size: contain; }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  max-width: 1024px;
+  padding-top: 125px;
+  padding-bottom: 30px;
+  margin: auto; }
 
-@media screen and (min-width: 768px) {
-  body {
-    background-color: gray; }
-
-  .menu__item--first {
-    background: url("https://cdn.worldvectorlogo.com/logos/html5.svg") no-repeat;
-    background-size: contain;
-    background-color: gray; }
-  .menu__item--second {
-    background: url("https://cdn.worldvectorlogo.com/logos/css-3.svg") no-repeat;
-    background-size: contain; }
-  .menu__item--third {
-    background: url("https://cdn.worldvectorlogo.com/logos/pug.svg") no-repeat;
-    background-size: contain; }
-  .menu__item--fourth {
-    background: url("https://cdn.worldvectorlogo.com/logos/sass-1.svg") no-repeat;
-    background-size: contain; } }
+.nav {
+  position: relative;
+  margin-bottom: 3.5rem; }
+  .nav__logo {
+    position: absolute;
+    top: -102px;
+    left: 50%;
+    width: 77px;
+    height: 77px;
+    margin-left: -38.5px;
+    font-family: "Dorsa", sans-serif;
+    font-size: 33px;
+    line-height: 77px;
+    color: #263555;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border-radius: 50%; }
+  .nav-menu {
+    display: flex;
+    justify-content: center;
+    padding-right: 6.25rem;
+    padding-left: 7.5rem; }
+    .nav-menu__item {
+      list-style: none; }
+      .nav-menu__item--center {
+        position: relative;
+        margin-right: 15%;
+        margin-left: 15%; }
+    .nav-menu__link {
+      font-family: "Pathway Gothic One", sans-serif;
+      font-size: 20px;
+      line-height: 30px;
+      color: #ffffff;
+      text-decoration: none;
+      text-transform: uppercase; }
+      .nav-menu__link:hover {
+        color: #263555;
+        transition: 0.5s; }
 
 /*# sourceMappingURL=style.css.map */
