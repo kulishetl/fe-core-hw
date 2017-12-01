@@ -238,7 +238,8 @@ body {
             justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 1rem 6.7rem 1.875rem;
+    padding: 1rem 6.7rem 1rem;
+    margin-bottom: 1.9rem;
     background-color: #30455b;
 }
 
