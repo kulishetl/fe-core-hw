@@ -146,7 +146,7 @@ body {
   background-color: #30455b; }
   .useful-links-menu {
     margin-bottom: 0.625rem; }
-    .useful-links-menu__last {
+    .useful-links-menu--last {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
@@ -210,7 +210,7 @@ body {
       fill: #C97064;
       transition: 0.5s; }
     .social-menu__link:hover .social-menu__link--letter {
-      color: #ffffff;
+      fill: #ffffff;
       transition: 0.5s; }
 
 .copyright-menu {
