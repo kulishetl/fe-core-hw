@@ -1,0 +1,35 @@
+//border-radius
+$b-d: 50%;
+
+//colors
+$c1: #263555;
+$c2: #ffffff;
+$c3: #38afe5;
+
+//fonts
+$f1: "Dorsa", sans-serif;
+$f2: "Pathway Gothic One", sans-serif;
+$f3: "Open Sans Condensed", sans-serif;
+$f4: "Arial", sans-serif;
+
+//list-style
+$l-s: none;
+
+//parameters of logo
+    //diameter
+    $d-l-480: 77px;
+    $d-l-768: 101px;
+    $d-l-1024: 140px;
+
+    //font-size
+    $fs-l-480: 33px;
+    $fs-l-768: 44px;
+    $fs-l-1024: 60px;
+
+    //margin-left
+    $ml-480: (-1 * ($d-l-480/ 2));
+    $ml-768: (-1 * ($d-l-768/ 2));
+    $ml-1024: (-1 * ($d-l-1024/ 2));
+
+//transition
+$tr: 0.5s;
