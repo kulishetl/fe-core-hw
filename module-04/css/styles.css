@@ -1,0 +1,220 @@
+/* common styles */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 50px 0;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    font-family: "Arial", sans-serif; 
+    color: #4e5050;
+}
+
+.wrapper {
+    max-width: 902px;
+    padding: 100px 61px 80px 61px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.container-top, .container-bottom {
+    font-size: 0;
+}
+
+.main, .aside {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 19px;
+}
+
+.main {
+    max-width: 641px;
+}
+
+.aside {
+    max-width: 210px;
+    vertical-align: top;
+    padding-left: 51px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-family: "Pathway Gothic One", sans-serif;
+}
+
+h2, .shortcut, a, .text {
+    color: #263555;
+}
+
+.shortcut, a {
+    font-size: 15px;
+    line-height: 19px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #38afe5;
+}
+
+.container-top .main h2,
+.container-top .aside h2 {
+    margin-bottom: 48px;
+}
+
+/* styles of top .main */
+
+img {
+    float: left;
+    margin-right: 23px;
+}
+
+.container-top .main .shortcut {
+    margin-bottom: 8px;
+}
+
+.container-top .main .information {
+    margin-bottom: 8px;
+}
+
+/* styles of top .aside */
+
+ol {
+    counter-reset: list 0;
+    margin-bottom: 42px;
+}
+
+ol li {
+    list-style: none;
+}
+
+ol div {
+    display: inline-block;
+    max-width: 169px;
+}
+
+ol li::before {
+    counter-increment: list;
+    content: counter(list) "";
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+    margin-right: 9px;
+    color: #ffffff;
+    text-align: center;
+    width: 24px;
+    height: 26px;
+    line-height: 26px;
+    background-color: #38afe5;
+    border: 1px solid #4994b5;
+    border-radius: 13px;
+}
+
+ol .shortcut {
+    margin-bottom: 10px;
+}
+
+ol li {
+    margin-bottom: 26px;
+}
+
+ol li:last-of-type {
+    margin-bottom: 0;
+}
+
+/* adding of border */
+
+.container-top {
+    border-bottom: 1px solid #dedbdb;
+    margin-bottom: 55px; 
+}
+
+/* styles of bottom .main */
+
+.container-bottom .main h2 {
+    margin-bottom: 63px;
+}
+
+.container-bottom .main .shortcut {
+    margin-bottom: 23px;
+}
+
+.container-bottom .main .information {
+    margin-bottom: 30px;
+}
+
+/* styles of links lists */
+
+ul {
+    display: inline-block;
+    vertical-align: top;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+ul li:last-of-type {
+    margin-bottom: 0;
+}
+
+ul a {
+    line-height: 22.8px;
+}
+
+ul li::before {
+    content: "\2192";
+    width: 15px;
+    height: 10px;
+    line-height: 10px;
+    display: inline-block;
+    margin-right: 7px;
+    color: #38afe5;
+}
+
+ul:first-of-type {
+    padding-left: 24px;
+    margin-right: 67px;
+}
+
+/* styles of bottom .aside */
+
+.container-bottom .aside h2 {
+    margin-bottom: 23px;
+}
+
+.container-bottom .aside .shortcut {
+    text-indent: 10px;
+    padding: 22px 20px 45px 22px;
+    margin-bottom: 36px; 
+    background: url("../img/quote.png") no-repeat;
+    background-size: contain;
+}
+
+
+.container-bottom .aside .shortcut::before {
+    content: "\201c";
+}
+.container-bottom .aside .shortcut::after {
+    content: "\201d";
+}
+
+.container-bottom .aside .text {
+    font-size: 16px;
+    line-height: 22.8px;
+    text-align: center;
+    color: #263555;
+    margin-bottom: 15px;
+}
+
+.container-bottom .aside .information {
+    text-align: center;
+}
