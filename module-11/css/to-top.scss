@@ -1,0 +1,17 @@
+.to-top {
+    position: fixed;
+    right: 6px;
+    bottom: 8px;
+    display: block;
+    @include dimensions (30px, 30px);
+    background: url("data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTcuNDEgMTUuNDFMMTIgMTAuODNsNC41OSA0LjU4TDE4IDE0bC02LTYtNiA2eiIvPiAgICA8cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+PC9zdmc+") no-repeat;
+    background-color: $c3;
+    background-position: 3px 2px;
+    border-radius: $b-d; 
+    transform: scale(0.8);
+
+    &:hover {
+        opacity: 0.55;
+        transition: $tr;
+    }
+}

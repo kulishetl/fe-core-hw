@@ -1,0 +1,22 @@
+.useful-links {
+    padding: 2.1rem 5rem 1.3rem 3rem;
+    margin-bottom: 1.3rem;
+
+    &-menu--last {
+        flex-basis: auto;
+        display: block;
+    }
+    &-menu__link {
+        @include text (16px, 22px);
+    }
+    &-menu__item--first {
+        @include text (18px, 24px);
+    }
+    &-menu__item--second {
+        margin-left: 0;
+        font-size: 12px;
+    }
+    &-menu__hidden {
+        display: inline;
+    }
+}
