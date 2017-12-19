@@ -22,7 +22,7 @@ console.log(bottomLine.charAt(bottomLength-1)); */
 let firstSearch = topLine.indexOf('[');
 let secondSearch = topLine.indexOf(']');
 
-
+//result
 const message = `Создано три строчных константы:
 topLine = ${topLine}, 
 middleLine = ${middleLine},
