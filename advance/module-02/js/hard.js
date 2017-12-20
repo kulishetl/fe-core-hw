@@ -72,6 +72,6 @@ if (currentAmount % 1 === 0) {                                                  
     alert(infoMessage);
 }
 
-console.log(`В группе на ${resort1} осталось мест ${amountGroup1}
-В группе на ${resort2} осталось мест ${amountGroup2}
-В группе на ${resort3} осталось мест ${amountGroup3}`);
+console.log(`В группе на ${resort1} осталось мест: ${amountGroup1}
+В группе на ${resort2} осталось мест: ${amountGroup2}
+В группе на ${resort3} осталось мест: ${amountGroup3}`);
