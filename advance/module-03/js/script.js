@@ -1,4 +1,4 @@
-//
+//input data
 const alphabet = "qwertyuiop[]asdfghjkl;'zxcvbnm,./";
 let keyboard = [[],[],[]];
 let j = 0;
