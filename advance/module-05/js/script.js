@@ -35,7 +35,7 @@ let langChoise;
 
 // проверка корректности ввода
 do {
-    userChoise = prompt("Выберите язык для использования: en-0, ru-1, ua-2", '');
+    userChoise = prompt("Выберите раскладку: en-0, ru-1, ua-2", '');
     langChoise = (userChoise === "0") || (userChoise === "1") || (userChoise === "2") || (userChoise === null);
     if (!langChoise) {
         alert(wrongChoise);
