@@ -50,22 +50,8 @@ function getRandCharInAlph(lang) {
     return arr[firstIndex][secondIndex];
 }
 
-//переключение языка в зависимости от выбранного алфавита
-switch (userChoise) {
-    case "0":
-        keyboard.currentLang = "en";
-        console.log(getRandCharInAlph(keyboard.layouts.en));
-        break;
-    case "1":
-        keyboard.currentLang = "ru";
-        console.log(getRandCharInAlph(keyboard.layouts.ru));
-        break;
-    case "2":
-        keyboard.currentLang = "ua";
-        console.log(getRandCharInAlph(keyboard.layouts.ua));
-        break;
-    default:
-        console.log("Вы отказались от выбора раскладки");
-}
-
-console.log(keyboard);
+//получение результатов в зависимости от выбранной раскладки
+if (userChoise !== null) {
+    keyboard.currentLang = keyboard.langs[+userChoise];
+    console.log(getRandCharInAlph(keyboard.layouts[keyboard.currentLang]));
+  }
