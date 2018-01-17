@@ -18,70 +18,72 @@ chars: ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f', 'g
 */
 
 const keyTrainer = {
-    //алфавит
-    chars: ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'z', 'x', 'c', 'v', 'b', 'n', 'm'],
-    //количество символов
-    charCount: '',
-    //ввод количества символов для задания
-    setCharCount() {
-      return prompt("Введите количество символов", '');
-    },
-    //проверка вводимого значения на соответсвие условиям
-    checkPositiveInteger() {
-      let condition;
-      let d;
-      do {
-        d = this.setCharCount();
-        condition = Number.isInteger(+d) && +d > 0;
-      } while (!condition);
-      this.charCount = +d;
-    },
-    //задание для пользователя
-    task: '',
-    //создание задания для пользователя
-    createTask() {
-      const arr = new Array(this.charCount).fill(1);
-      this.task = arr.map(x => x = this.chars[Math.floor(Math.random()*this.chars.length)])
-                     .reduce((x, y) => x + y);
-    },
-    //ввод пользователем задания
-    startTask() {
-      this.userInput = prompt(`Задание для ввода ${this.task}`, '');
-    },
-    //результат выполнения задания пользователем
-    userInput: '',
-    //сравнение заданного и полченного значений
-    compare () {
-      let i = 0;
-      let lim= 0;
-      let err = 0;
-      if(this.task.length === this.userInput.length) {
-        lim = this.task.length;
-      } else {
-        lim = Math.max(this.task.length, this.userInput.length);
-      }
-      while(i<lim) {
-        if(this.task[i] !== this.userInput[i]) {
-          err += 1;
-        }
-        i += 1;
-      }
-      this.userErrors = err;
-      if (err > 0) {
-        return console.log(`Допущено ошибок: ${err}. Желаем успехов в следующей попытке.`);
-      } else {
-        return console.log(`Поздравляем с успешным выполнением задания`);
-      }
-    },
-    //количество ошибок, допущенных пользователем
-    userErrors: '',
-    //функция для запуска выполнения keyTrainer
-    run() {
-      this.checkPositiveInteger();
-      this.createTask();
-      this.startTask();
-      this.compare();
+  //алфавит
+  chars: ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'z', 'x', 'c', 'v', 'b', 'n', 'm'],
+  //количество символов
+  charCount: '',
+  //ввод количества символов для задания
+  setCharCount() {
+    return prompt("Введите количество символов", '');
+  },
+  //проверка вводимого значения на соответсвие условиям
+  checkPositiveInteger() {
+    let condition;
+    let d;
+    do {
+      d = this.setCharCount();
+      condition = Number.isInteger(+d) && +d > 0;
+    } while (!condition);
+    this.charCount = +d;
+    return this;
+  },
+  //задание для пользователя
+  task: '',
+  //создание задания для пользователя
+  createTask() {
+    const arr = new Array(this.charCount).fill(1);
+    this.task = arr.map(x => x = this.chars[Math.floor(Math.random() * this.chars.length)])
+      .reduce((x, y) => x + y);
+    return this;
+  },
+  //ввод пользователем задания
+  startTask() {
+    this.userInput = prompt(`Задание для ввода " ${this.task} "`, '');
+    return this;
+  },
+  //результат выполнения задания пользователем
+  userInput: '',
+  //сравнение заданного и полченного значений
+  compare() {
+    let i = 0;
+    let lim = 0;
+    let err = 0;
+    if (this.task.length === this.userInput.length) {
+      lim = this.task.length;
+    } else {
+      lim = Math.max(this.task.length, this.userInput.length);
     }
-  }
-  
-  keyTrainer.run();
+    while (i < lim) {
+      if (this.task[i] !== this.userInput[i]) {
+        err += 1;
+      }
+      i += 1;
+    }
+    this.userErrors = err;
+    if (err > 0) {
+      return console.log(`Допущено ошибок: ${err}. Желаем успехов в следующей попытке.`);
+    } else {
+      return console.log(`Поздравляем с успешным выполнением задания.`);
+    }
+  },
+  //количество ошибок, допущенных пользователем
+  userErrors: ''
+}
+
+//функция для запуска выполнения keyTrainer
+function run() {
+  return keyTrainer.checkPositiveInteger().createTask().startTask().compare();
+}
+
+run();
+console.log(keyTrainer);
