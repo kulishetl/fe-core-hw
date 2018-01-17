@@ -86,4 +86,3 @@ function run() {
 }
 
 run();
-console.log(keyTrainer);
