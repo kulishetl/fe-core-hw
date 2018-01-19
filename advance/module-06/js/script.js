@@ -82,7 +82,7 @@ const keyTrainer = {
 
 //функция для запуска выполнения keyTrainer
 function run() {
-  return keyTrainer.checkPositiveInteger().createTask().startTask().compare();
+  keyTrainer.checkPositiveInteger().createTask().startTask().compare();
 }
 
 run();
