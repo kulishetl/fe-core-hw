@@ -67,11 +67,10 @@ const keyboard = {
     },
     //проверка корректности выбора языка
     checkPositiveInteger() {
-        let d, langChoise;
+        let d;
         do {
             d = this.setCurrentLang();
-            langChoise = (d === "0") || (d === "1") || (d === "2");
-        } while (!langChoise);
+        } while (!((+d === 0) || (+d === 1) || (+d === 2)));
         this.currentLang = +d;
         return this;
     }
