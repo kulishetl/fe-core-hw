@@ -1,5 +1,5 @@
 body {
-	padding-top: 20rem;	
+	padding-top: 80px;
 	background-color: gainsboro;
 }
 
@@ -21,6 +21,10 @@ li {
 	font-size: 45px;
 	text-align: center;
 	color: white;
+}
+
+ul li:last-of-type {
+	margin-right: 0;
 }
 
 li:hover {
