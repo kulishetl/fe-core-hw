@@ -36,10 +36,10 @@ const keyboard = {
 
         //создание элементов списка
         let topRowItems = topRowArr.map(n => n = '<li></li>')
-                                   .reduce((acc, next) => acc + next);
-        let middleRowItems = middleRowArr.map(n => n = '<li></li>')
-                                   .reduce((acc, next) => acc + next);
-        let bottomRowItems = bottomRowArr.map(n => n = '<li></li>')
+                                   .reduce((acc, next) => acc + next),
+            middleRowItems = middleRowArr.map(n => n = '<li></li>')
+                                   .reduce((acc, next) => acc + next),
+            bottomRowItems = bottomRowArr.map(n => n = '<li></li>')
                                    .reduce((acc, next) => acc + next);
         //выбор места для вставки клавиатуры
         const keys = document.querySelector("body");
@@ -58,8 +58,8 @@ const keyboard = {
             arrBottom = [...elBottom];
         //запись букв текущего языка в кнопки клавиатуры
         return arrTop.map((el, i) => el.textContent = topRowArr[i]) +
-            arrMiddle.map((el, i) => el.textContent = middleRowArr[i]) +
-            arrBottom.map((el, i) => el.textContent = bottomRowArr[i]);
+               arrMiddle.map((el, i) => el.textContent = middleRowArr[i]) +
+               arrBottom.map((el, i) => el.textContent = bottomRowArr[i]);
     },
     //выбор языка клавиатуры
     setCurrentLang() {
