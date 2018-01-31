@@ -39,7 +39,9 @@ const keyTrainer = {
     task: '',
     //создание задания для пользователя
     createTask() {
-        this.task = new Array(this.charCount).fill(1).map(x => x = this.chars[Math.floor(Math.random() * this.chars.length)]).reduce((x, y) => x + y);
+        this.task = new Array(this.charCount).fill(1)
+                                             .map(x => x = this.chars[Math.floor(Math.random() * this.chars.length)])
+                                             .reduce((x, y) => x + y);
         return this;
     },
     //ввод пользователем задания

@@ -1,0 +1,31 @@
+body {
+	padding-top: 80px;
+	;
+	background-color: gainsboro;
+}
+
+ul {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+}
+
+li {
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+	margin-right: 10px;
+	background-color: black;
+	border: 5px solid dimgray;
+	border-radius: 10px;
+	font-family: sans-serif;
+	font-size: 45px;
+	text-align: center;
+	color: white;
+}
+
+li:hover {
+	background: #111;
+	cursor: pointer;
+	transform: scale(1.2);
+}
