@@ -28,12 +28,12 @@ ul li:last-of-type {
 }
 
 li:hover {
-	background-color: darkblue;
+	
 	cursor: pointer;
 	transform: scale(1.2);
 }
 
 li:active {
 	transform: scale(0.9);
-	background-color: mediumblue;
+	background-color: midnightblue;
 }
