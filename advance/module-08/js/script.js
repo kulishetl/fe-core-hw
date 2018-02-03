@@ -36,7 +36,7 @@ const keyClickDown = (evt) => {
 //присвоение найденному элементу класса        
         sym.classList.add("keyboard__btn--active");
 //определение ноты        
-        let sound = sym.getAttribute("data-note");
+        let sound = sym.dataset.note;
 //воспроизведение звука
         if (checkbox.checked) {
             playSound(sound);
@@ -47,7 +47,7 @@ const keyClickDown = (evt) => {
 //присвоение класса
         sp.classList.add("keyboard__btn--active")
 //определение ноты 
-        let sound = sp.getAttribute("data-note");
+        let sound = sp.dataset.note;
 //воспроизведение звука
         if (checkbox.checked) {
             playSound(sound);
