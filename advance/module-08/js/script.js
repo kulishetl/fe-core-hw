@@ -22,33 +22,43 @@ const playSound = note => {
     const audio = document.querySelector(`audio[data-note=${note}]`);
     audio.currentTime = 0;
     audio.play();
-  };
-  
-  const buttons = Array.from(document.querySelectorAll("button"));
-  const keys = "qwertyuiop[]asdfghjkl;'zxcvbnm,./".split("");
-  const checkbox = document.getElementById("slideThree");
-  const keyClickDown = (evt) => {
-  
-   let f = buttons.find(button => button.textContent === evt.key);
-    if(f) {
-      f.classList.add("keyboard__btn--active");
-      let sound = f.getAttribute("data-note");
-      if(checkbox.checked) {
-        playSound(sound);
-      }
-    } else if(evt.key === " ") {
-      let sp = document.querySelector(".keyboard__btn--space");
-      sp.classList.add("keyboard__btn--active")
-      let sound = sp.getAttribute("data-note");
-      if(checkbox.checked) {
-        playSound(sound);
-      }
+};
+
+const buttons = Array.from(document.querySelectorAll("button"));
+const keys = "qwertyuiop[]asdfghjkl;'zxcvbnm,./".split("");
+const checkbox = document.getElementById("slideThree");
+const keyClickDown = (evt) => {
+
+//поиск DOM элемента, содержащего символ, аналогичный нажатой клавише
+    let sym = buttons.find(button => button.textContent === evt.key);
+    if (sym) {
+
+//присвоение найденному элементу класса        
+        sym.classList.add("keyboard__btn--active");
+//определение ноты        
+        let sound = sym.getAttribute("data-note");
+//воспроизведение звука
+        if (checkbox.checked) {
+            playSound(sound);
+        }
+//работа с пробелом
+    } else if (evt.key === " ") {
+        let sp = document.querySelector(".keyboard__btn--space");
+//присвоение класса
+        sp.classList.add("keyboard__btn--active")
+//определение ноты 
+        let sound = sp.getAttribute("data-note");
+//воспроизведение звука
+        if (checkbox.checked) {
+            playSound(sound);
+        }
     }
-  };
-  
-  const keyClickUp = (evt) => {
+};
+
+//удаление класса при отжатии кнопки
+const keyClickUp = (evt) => {
     buttons.forEach(button => button.classList.remove("keyboard__btn--active"));
-  }
-  
-  window.addEventListener("keydown", keyClickDown);
-  window.addEventListener("keyup", keyClickUp);
+}
+//слушатели событий
+window.addEventListener("keydown", keyClickDown);
+window.addEventListener("keyup", keyClickUp);
