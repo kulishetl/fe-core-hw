@@ -30,13 +30,13 @@ const checkbox = document.getElementById("slideThree");
 const keyClickDown = (evt) => {
 
 //поиск DOM элемента, содержащего символ, аналогичный нажатой клавише
-    let sym = buttons.find(button => button.textContent === evt.key) || buttons.find(button => button.textContent === evt.code.toLowerCase());
-    if (sym) {
+    let key = buttons.find(button => button.textContent === evt.key) || buttons.find(button => button.textContent === evt.code.toLowerCase());
+    if (key) {
 
 //присвоение найденному элементу класса        
-        sym.classList.add("keyboard__btn--active");
+        key.classList.add("keyboard__btn--active");
 //определение ноты        
-        let sound = sym.dataset.note;
+        let sound = key.dataset.note;
 //воспроизведение звука
         if (checkbox.checked) {
             playSound(sound);
