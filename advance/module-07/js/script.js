@@ -44,6 +44,7 @@ const keyboard = {
 //сборка элементов
         wrap.append(top, middle, bottom);
         keys.append(wrap);
+        return this;
     },
 //выбор языка
     setCurrentLang() {
