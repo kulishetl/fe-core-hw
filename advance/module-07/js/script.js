@@ -32,8 +32,6 @@ const keyboard = {
         let arrRow = [...elRow];
         arrRow.map((el, i) => el.textContent = row[i]);
         return rowEl;
-
-
     },
     createLayouts() {
 //создание обертки
