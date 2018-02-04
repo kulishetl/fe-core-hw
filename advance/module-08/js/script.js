@@ -30,7 +30,7 @@ const checkbox = document.getElementById("slideThree");
 const keyClickDown = (evt) => {
 
 //поиск DOM элемента, содержащего символ, аналогичный нажатой клавише
-    let sym = buttons.find(button => button.textContent === evt.key);
+    let sym = buttons.find(button => button.textContent === evt.key) || buttons.find(button => button.textContent === evt.code.toLowerCase());
     if (sym) {
 
 //присвоение найденному элементу класса        
@@ -41,18 +41,7 @@ const keyClickDown = (evt) => {
         if (checkbox.checked) {
             playSound(sound);
         }
-//работа с пробелом
-    } else if (evt.key === " ") {
-        let sp = document.querySelector(".keyboard__btn--space");
-//присвоение класса
-        sp.classList.add("keyboard__btn--active")
-//определение ноты 
-        let sound = sp.dataset.note;
-//воспроизведение звука
-        if (checkbox.checked) {
-            playSound(sound);
-        }
-    }
+    } 
 };
 
 //удаление класса при отжатии кнопки
