@@ -17,57 +17,43 @@ const keyboard = {
         }
     },
     langs: ["en", "ru", "ua"],
-    currentLang: '',
-    createLayout() {
-        //создание обертки для клавиатуры
-        let wrap = document.createElement('div');
-        //создание списков для строк      
-        let topRowEl = document.createElement('ul');
-        topRowEl.classList.add('top');
-        let middleRowEl = document.createElement('ul');
-        middleRowEl.classList.add('middle');
-        let bottomRowEl = document.createElement('ul');
-        bottomRowEl.classList.add('bottom');
-        //массивы букв по строкам
-        let topRowArr = this.layouts[this.langs[this.currentLang]].topRow,
-            middleRowArr = this.layouts[this.langs[this.currentLang]].middleRow,
-            bottomRowArr = this.layouts[this.langs[this.currentLang]].bottomRow;
+    currentLang: "",
+//создание ряда
+    createLayout(row) {
+//создание элемента ul
+        let rowEl = document.createElement('ul');
+//создание элементов li и объединение их в одну строку
+        let rowItems = row.map(n => n = '<li></li>')
+            .reduce((acc, next) => acc + next);
+//вставка li внутрь ul
+        rowEl.insertAdjacentHTML('beforeend', rowItems);
+//заполнение li буквами соответствующего ряда
+        const elRow = rowEl.querySelectorAll('li');
+        let arrRow = [...elRow];
+        arrRow.map((el, i) => el.textContent = row[i]);
+        return rowEl;
 
 
-        //создание элементов списка
-        let topRowItems = topRowArr.map(n => n = '<li></li>')
-                                   .reduce((acc, next) => acc + next),
-            middleRowItems = middleRowArr.map(n => n = '<li></li>')
-                                   .reduce((acc, next) => acc + next),
-            bottomRowItems = bottomRowArr.map(n => n = '<li></li>')
-                                   .reduce((acc, next) => acc + next);
-        //выбор места для вставки клавиатуры
-        const keys = document.querySelector("body");
-        //сборка элементов
-        wrap.append(topRowEl, middleRowEl, bottomRowEl);
-        topRowEl.insertAdjacentHTML('beforeend', topRowItems);
-        middleRowEl.insertAdjacentHTML('beforeend', middleRowItems);
-        bottomRowEl.insertAdjacentHTML('beforeend', bottomRowItems);
-        keys.append(wrap);
-        //формирование массивов из элементов списка по строкам
-        const elTop = topRowEl.querySelectorAll('li'),
-            elMiddle = middleRowEl.querySelectorAll('li'),
-            elBottom = bottomRowEl.querySelectorAll('li');
-        let arrTop = [...elTop],
-            arrMiddle = [...elMiddle],
-            arrBottom = [...elBottom];
-        //запись букв текущего языка в кнопки клавиатуры
-        return arrTop.map((el, i) => el.textContent = topRowArr[i]) +
-               arrMiddle.map((el, i) => el.textContent = middleRowArr[i]) +
-               arrBottom.map((el, i) => el.textContent = bottomRowArr[i]);
     },
-    //выбор языка клавиатуры
+    createLayouts() {
+//создание обертки
+        let wrap = document.createElement('div');
+        const keys = document.querySelector("body");
+//получение рядов клавиатуры выбранного языка        
+        const top = this.createLayout(this.layouts[this.langs[this.currentLang]].topRow);
+        const middle = this.createLayout(this.layouts[this.langs[this.currentLang]].middleRow);
+        const bottom = this.createLayout(this.layouts[this.langs[this.currentLang]].bottomRow);
+//сборка элементов
+        wrap.append(top, middle, bottom);
+        keys.append(wrap);
+    },
+//выбор языка
     setCurrentLang() {
         return prompt("Выберите язык клавиатуры: en-0, ru-1, ua-2", '');
     },
-    //проверка корректности выбора языка
+//проверка корректности выбора
     checkPositiveInteger() {
-        let d;
+        let d, langChoise;
         do {
             d = this.setCurrentLang();
         } while (!((+d === 0) || (+d === 1) || (+d === 2)));
@@ -77,7 +63,6 @@ const keyboard = {
 };
 
 function run() {
-    keyboard.checkPositiveInteger().createLayout();
+    keyboard.checkPositiveInteger().createLayouts();
 }
-
 run();
