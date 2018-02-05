@@ -3,15 +3,11 @@ body {
 	background-color: gainsboro;
 }
 
-div {
-    background-color: lightgray;
-}
-
 h1 {
-	width: 22rem;
+	width: 23rem;
 	margin: auto;
 	margin-bottom: 2rem;
-	font-size: 2.8rem;
+	font-size: 3rem;
 	font-weight: normal;
 }
 
@@ -33,7 +29,7 @@ h1 {
 	width: 70px;
 	height: 70px;
 	line-height: 70px;
-	margin-right: 10px;
+	margin-right: 12px;
 	background-color: black;
 	border: 5px solid dimgray;
 	border-radius: 10px;
@@ -41,6 +37,7 @@ h1 {
 	font-size: 45px;
 	text-align: center;
     color: white;
+    box-shadow: 8px 8px 10px dimgray;
 }
 
 .keyboard__btn:last-child {
@@ -53,5 +50,6 @@ h1 {
 
 .keyboard__btn--active {
 	background-color: #03a9f4;
-	transform: scale(0.9);
+    transform: scale(0.9);
+    box-shadow: none;
 }
