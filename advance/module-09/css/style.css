@@ -29,7 +29,7 @@ h1 {
 	width: 70px;
 	height: 70px;
 	line-height: 70px;
-	margin-right: 12px;
+	margin-right: 10px;
 	background-color: black;
 	border: 5px solid dimgray;
 	border-radius: 10px;
@@ -37,7 +37,7 @@ h1 {
 	font-size: 45px;
 	text-align: center;
     color: white;
-    box-shadow: 8px 8px 10px dimgray;
+    box-shadow: 3px 3px 5px black;
 }
 
 .keyboard__btn:last-child {
