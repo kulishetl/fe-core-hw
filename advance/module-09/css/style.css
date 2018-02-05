@@ -50,6 +50,5 @@ h1 {
 
 .keyboard__btn--active {
 	background-color: dodgerblue;
-    transform: scale(0.9);
     box-shadow: none;
 }
