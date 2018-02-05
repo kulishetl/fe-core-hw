@@ -13,15 +13,15 @@
     <script type="tpl/lodash" id="keyboard-tpl">
         <h1>You pressed: <span class="pressed"></span></h1>
         <% Object.keys(rows).forEach(key => { %>
-            <div class="keyboard__row">
+            <ul class="keyboard__row">
                 <% rows[key].forEach(btn => { %>    
-                <button class="keyboard__btn"><%- btn %></button>
+                <li class="keyboard__btn"><%- btn %></li>
                 <% }); %>
-            </div>
+                </ul>
             <% }); %>
-            <div class="keyboard__row">
-                <button class="keyboard__btn keyboard__btn--space">space</button>
-            </div>
+            <ul class="keyboard__row">
+                <li class="keyboard__btn keyboard__btn--space">space</li>
+            </li>
     </script>
     <script src="js/script.js"></script>
     
