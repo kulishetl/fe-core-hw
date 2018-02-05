@@ -12,7 +12,7 @@ const lang = {
 const html = document.getElementById("keyboard-tpl").textContent.trim();
 const parent = document.getElementById("keyboard-container");
 
-//функция разбивки строки на на массивы по рядам клавиатуры
+//функция разбивки строки на массивы
 function createLayout(alphabet, firstPoint, secondPoint) {
     this.topRow = alphabet.split("").slice(0, firstPoint);
     this.middleRow = alphabet.split("").slice(firstPoint, secondPoint);

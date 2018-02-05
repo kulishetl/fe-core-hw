@@ -1,31 +1,36 @@
-
-
 body {
 	padding-top: 10rem;
 	background-color: gainsboro;
 }
 
+div {
+    background-color: lightgray;
+}
+
 h1 {
-  width: 22rem;
-  margin: auto;
-  margin-bottom: 2rem;
-  font-size: 2.8rem;
-  font-weight: normal;
+	width: 22rem;
+	margin: auto;
+	margin-bottom: 2rem;
+	font-size: 2.8rem;
+	font-weight: normal;
 }
 
 .keyboard__row {
-  display: flex;
+	display: flex;
 	justify-content: center;
-	list-style: none;
- 
+    list-style: none;
 }
 
-.keyboard__row:last-child {
-  margin-bottom: 0;
+.keyboard__row:first-of-type {
+    margin-top: 0;
+}
+
+.keyboard__row:last-of-type {
+	margin-bottom: 0;
 }
 
 .keyboard__btn {
-  width: 70px;
+	width: 70px;
 	height: 70px;
 	line-height: 70px;
 	margin-right: 10px;
@@ -35,18 +40,18 @@ h1 {
 	font-family: sans-serif;
 	font-size: 45px;
 	text-align: center;
-	color: white;
+    color: white;
 }
 
 .keyboard__btn:last-child {
-  margin-right: 0;
+	margin-right: 0;
 }
 
 .keyboard__btn--space {
-  width: 27rem;
+	width: 27rem;
 }
 
 .keyboard__btn--active {
-  background-color: #03a9f4;
-  transform: scale(0.8);
+	background-color: #03a9f4;
+	transform: scale(0.9);
 }
