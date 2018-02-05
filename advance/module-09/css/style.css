@@ -49,7 +49,7 @@ h1 {
 }
 
 .keyboard__btn--active {
-	background-color: #03a9f4;
+	background-color: dodgerblue;
     transform: scale(0.9);
     box-shadow: none;
 }
