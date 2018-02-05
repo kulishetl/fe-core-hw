@@ -13,13 +13,13 @@ const html = document.getElementById("keyboard-tpl").textContent.trim();
 const parent = document.getElementById("keyboard-container");
 
 //функция разбивки строки на на массивы по рядам клавиатуры
-function createLayout(alphabet) {
-    this.topRow = alphabet.split("").slice(0, 12);
-    this.middleRow = alphabet.split("").slice(12, 23);
-    this.bottomRow = alphabet.split("").slice(23);
+function createLayout(alphabet, firstPoint, secondPoint) {
+    this.topRow = alphabet.split("").slice(0, firstPoint);
+    this.middleRow = alphabet.split("").slice(firstPoint, secondPoint);
+    this.bottomRow = alphabet.split("").slice(secondPoint);
 }
 //создание клавиатурных строк английской раскладки
-const rows = new createLayout(lang.en);
+const rows = new createLayout(lang.en, 12, 23);
 
 //функция рендеринга html разметки по шаблону
 function renderKeyboard(tpl, rows, parent) {
