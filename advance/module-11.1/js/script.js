@@ -16,7 +16,7 @@ postBtn.addEventListener("click", post);
 function post(evt) {
   evt.preventDefault();
   const userRequest = `${apiUrl}?action=1&name=${input.value}`;
-  fetch(userRequest, {method: "POST"})
+  fetch(userRequest, {method: "post"})
   .then(response => {
     if(response.ok) {
       return response.json();
