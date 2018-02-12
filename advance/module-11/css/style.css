@@ -72,9 +72,9 @@ body {
 .result {
     flex-basis: 25%;
     margin: 30px;
+    margin-top: 0;
     line-height: 2em;
     text-align: left;
-
 }
 
 ul {
