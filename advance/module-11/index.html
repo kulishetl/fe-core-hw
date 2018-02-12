@@ -14,44 +14,32 @@
         <!-- получение списка записей -->
         <div class="box">
             <form class="form get-form" method="post">
+                <p>Получить список пользователей</p>
                 <button class="mdc-btn" type="submit" id="js-get">get data</button>
             </form>
-            <div class="result get-result"></div>
-        </div>
-        <!-- добавление новой записи -->
-        <div class="box">
+            <!-- добавление новой записи -->
             <form class="form add-form" method="post">
-                <input type="text" name="name"  id="add-name" placeholder="Enter user name">
+                <p>Добавить пользователя</p>
+                <input type="text" name="name" id="add-name" placeholder="Enter user name">
                 <input type="text" name="score" id="add-score" placeholder="Enter user score">
                 <button class="mdc-btn" type="submit" id="js-add">add user</button>
             </form>
-            <div class="result add-result"></div>
-        </div>
-        <!-- удаление записи по id-->
-        <div class="box">
+            <!-- удаление записи по id-->
             <form class="form remove-form" method="post">
+                <p>Удалить пользователя</p>
                 <input type="text" name="id" id="remove-id" placeholder="Enter user id">
                 <button class="mdc-btn" type="submit" id="js-remove">remove user</button>
             </form>
-            <div class="result remove-result"></div>
-        </div>
-        <!-- обновление данных существующей записи -->
-        <div class="box">
+            <!-- обновление данных существующей записи -->
             <form class="form update-form" method="post">
+                <p>Обновить имя и очки пользователя</p>
                 <input type="text" name="id" id="update-id" placeholder="Enter user id">
                 <input type="text" name="name" id="update-name" placeholder="Enter new user name">
                 <input type="text" name="score" id="update-score" placeholder="Enter new user score">
                 <button class="mdc-btn" type="submit" id="js-update">update user</button>
             </form>
-            <div class="result update-result"></div>
         </div>
-
-
-</table>
-
-
-
-
+        <div class="result"></div>
     </div>
     <script src="js/script.js"></script>
 </body>

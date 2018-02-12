@@ -5,7 +5,7 @@ body {
 
 .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     padding-top: 20px;
     margin: auto;
 }
@@ -40,11 +40,13 @@ body {
 
 .form {
     display: flex;
-    height: 180px;
-    align-items: flex-end;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap;;
     padding: 20px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    border: 2px solid #00796b;
+    border-radius: 10px;
 }
 
 .form input {
@@ -59,15 +61,20 @@ body {
     border-bottom: 2px solid #00796b;
 }
 
+.form input:last-of-type {
+    margin-bottom: 20px;
+}
+
 .form input::placeholder {
     color: #616161;
 }
 
 .result {
-    width: 90%;
-    margin: 30px auto;
+    flex-basis: 25%;
+    margin: 30px;
     line-height: 2em;
-    text-align: right;
+    text-align: left;
+
 }
 
 ul {
@@ -87,7 +94,12 @@ ul li:first-of-type {
     flex-basis: 20%;
 }
 
-ul li:first-of-type,
-ul li:nth-of-type(2) {
-    text-align: left;
+
+ul li:last-of-type {
+    text-align: right;
+}
+
+p {
+    flex-basis: 100%;
+    text-align: center;
 }
