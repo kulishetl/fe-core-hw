@@ -12,6 +12,7 @@ const rigger = require('gulp-rigger');
 const babel = require('gulp-babel');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
+const plumber = require('gulp-plumber');
 
 // Создаем таск для сборки html файлов
 gulp.task('html', () => {
@@ -34,7 +35,7 @@ gulp.task('html', () => {
 // Создаем таск для сборки css файлов
 gulp.task('css', () => {
   // Берем только файл styles.scss в папке src, в который импортируеются паршалы
-  return gulp.src('./src/sass/main.scss')
+  return gulp.src('./src/sass/style.scss')
     // Преобразовываем sass в css
     .pipe(sass().on('error', sass.logError))
     // Создаем вендорные префиксы
@@ -49,7 +50,7 @@ gulp.task('css', () => {
     // Минифицируем css
     .pipe(cssnano())
     // Выкидываем css в папку dist
-    .pipe(gulp.dest('./dist'))
+    .pipe(gulp.dest('./dist/css'))
     // Говорим browser-sync о том что пора перезагрузить барузер так как файл изменился
     .pipe(browserSync.reload({
       stream: true
@@ -89,7 +90,7 @@ gulp.task('fonts', () => {
 
 //Таск для сборки, минификации и обработки babel всех файлов js
 gulp.task('js', () => {
-  return gulp.src('./src/*.js')
+  return gulp.src('./src/js/script.js')
   // с помощью concat собираем куски js файлов, если таковые есть (//= в scripts.min.js)
   .pipe(concat('scripts.min.js'))
   //с помощью babel конвертируем код в в ES5-совместимый код
@@ -99,7 +100,7 @@ gulp.task('js', () => {
   //минифицируем файл js
   .pipe(uglify())
   //полученный файл отправляем в папку dist/js
-  .pipe(gulp.dest('./dist'))
+  .pipe(gulp.dest('./dist/js'))
   // Говорим browser-sync о том что пора перезагрузить барузер так как файл изменился
   .pipe(browserSync.reload({
     stream: true
