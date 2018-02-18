@@ -34,39 +34,56 @@ const lastNameCyr = /^([^\w\s\-]*[а-яё])\s?-?\s?([^\w\s\-]*[а-яё])$/i;
 //реглярное выражение для номера телефона
 const regExpTel = /^\+(?:[\-\s]?\d){12}$/;
 
-
-
-const res = {
+//результаты проверки соответствия введенных данных
+const valid = {
     firstname: "",
     lastname: "",
     tel: ""
 };
+//введенные данные, прошедшие валидацию
+const dataResult = {
+    "first name": "",
+    "last name": "",
+    "tel number": ""
+};
+
+
 
 
 submitBtn.addEventListener("click", validate);
 
 function validate(evt) {
     evt.preventDefault();
+    //проверка наличия данных в списке resultsList, для обнуления
     if (resultsList.innerHTML) {
         resultsList.innerHTML = "";
     }
+    //проверка наличия данных на входе
     const checkVal = firstname.value && lastname.value && tel.value;
     if (checkVal) {
-        res.firstname = firstNameLat.test(firstname.value) || firstNameCyr.test(firstname.value);
-        res.lastname = lastNameLat.test(lastname.value) || lastNameCyr.test(lastname.value);
-        res.tel = regExpTel.test(tel.value);
-        showResults(res);
-        if(res.firstname && res.lastname && res.tel) {
+        //валидация введенных данных в соответсвии с заданными регулярными выражениями
+        valid.firstname = firstNameLat.test(firstname.value) || firstNameCyr.test(firstname.value);
+        valid.lastname = lastNameLat.test(lastname.value) || lastNameCyr.test(lastname.value);
+        valid.tel = regExpTel.test(tel.value);
+        //отрисовка результатов валидации
+        showResults(valid);
+        //приведение к заданному виду и запись валидных данных
+        if(valid.firstname && valid.lastname && valid.tel) {
+            dataResult["first name"] = firstname.value;
+            dataResult["last name"] = lastname.value;
+            dataResult["tel number"] = tel.value.replace(/[\s-]/g, '').replace(/^(\+{1}\d{3})(\d{2})(\d{2})(\d{2})(\d{3})/, '$1 $2 $3 $4 $5');
+            //обнуление полей ввода, в случае успешного заполнения формы
             firstname.value = "";
             lastname.value = "";
             tel.value = "";
+            console.log(dataResult);
         }
     } else {
         resultsList.insertAdjacentHTML('beforeend', '<li class="error">Необходимо заполнить все поля</li>');
     }
 
 }
-
+//функция для отрисовки результатов валидации
 function showResults(results) {
     let res = Object.keys(results).map(key => {
         if (results[key]) {
