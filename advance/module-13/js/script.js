@@ -47,9 +47,6 @@ const dataResult = {
     "tel number": ""
 };
 
-
-
-
 submitBtn.addEventListener("click", validate);
 
 function validate(evt) {
