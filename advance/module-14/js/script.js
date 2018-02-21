@@ -77,7 +77,7 @@ function updateClockface(time) {
   clockface.textContent = getFormattedTime(time);
 }
 
-//вариант с применением делегирования и одним слушателем. Функция выглядит более громоздко, для корректной работы появляется еще оди ноператор if
+//вариант с применением делегирования и одним слушателем. Функция выглядит более громоздко, для корректной работы появляется еще один оператор if
 /*const body = document.querySelector('.lang-ctrls__body');
 
 function controlTimer (evt) {
