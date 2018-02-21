@@ -53,8 +53,7 @@ function stopTimer (){
 startBtn.addEventListener('click', startTimer);
 stopBtn.addEventListener('click', stopTimer);
 
-//вариант с применением делегирования и одним слушателем. Функция выглядит более громоздко, отлаживать сложнее
-
+//вариант с применением делегирования и одним слушателем. Функция выглядит более громоздко, для корректной работы появляется еще оди ноператор if
 /*const body = document.querySelector('.lang-ctrls__body');
 
 function controlTimer (evt) {
