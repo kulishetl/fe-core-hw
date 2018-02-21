@@ -5,7 +5,7 @@
 При нажатии на кнопку stop, функция сохраняет значение текущего момента времени в stopTime и записывает разницу между startTime и stopTime в interval.
 При нажатии на stop, значение interval выводится в консоль.
 */
-
+const clockface = document.querySelector(".clock__time");
 const startBtn = document.querySelector('#start');
 const stopBtn = document.querySelector('#stop');
 const buttons = Array.from(document.querySelectorAll('button'));
@@ -19,14 +19,16 @@ function Timer(){
 
 //метод для записи начального времени в прототип
 Timer.prototype.start = function() {
+  this.interval = 0;
+  updateClockface(this.interval);
   this.startTime = new Date();
- ;
 };
 
 //метод для записи конечного времени вывода интервала в консоль
 Timer.prototype.stop = function() {
   this.stopTime = new Date();
   this.interval = this.stopTime - this.startTime;
+  updateClockface(this.interval);
   console.log(`Прошло ${this.interval} ms`);
 }
 
@@ -52,6 +54,28 @@ function stopTimer (){
 //слушатели
 startBtn.addEventListener('click', startTimer);
 stopBtn.addEventListener('click', stopTimer);
+
+//добавлена возмолжность вывода финального интервала в html
+//форматирование ms в минуты и секунды
+function getFormattedTime(time) {
+  const date = new Date(time);
+  const mt =
+    date.getMinutes() > 9 ? date.getMinutes() : "0" + date.getMinutes();
+  const sc =
+    date.getSeconds() > 9 ? date.getSeconds() : "0" + date.getSeconds();
+  const ms =
+    date.getMilliseconds() < 10
+      ? "00" + date.getMilliseconds()
+      : date.getMilliseconds() < 100
+        ? "0" + date.getMilliseconds()
+        : date.getMilliseconds();
+
+  return `${mt}:${sc}:${ms}`;
+}
+//отображение финального значения прошедшего времени в html
+function updateClockface(time) {
+  clockface.textContent = getFormattedTime(time);
+}
 
 //вариант с применением делегирования и одним слушателем. Функция выглядит более громоздко, для корректной работы появляется еще оди ноператор if
 /*const body = document.querySelector('.lang-ctrls__body');
