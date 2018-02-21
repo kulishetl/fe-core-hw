@@ -8,6 +8,7 @@
 const clockface = document.querySelector(".clock__time");
 const startBtn = document.querySelector('#start');
 const stopBtn = document.querySelector('#stop');
+const controls = document.querySelector(".lang-ctrls__body");
 const buttons = Array.from(document.querySelectorAll('button'));
 
 //создание конструктора для таймера
@@ -37,21 +38,31 @@ const timer = new Timer();
 //callback функции
 function startTimer () {
   if(!startBtn.classList.contains("lang-ctrls__btn--active")) {
-    buttons.map(btn => btn.classList.remove("lang-ctrls__btn--active"));
-    startBtn.classList.add("lang-ctrls__btn--active");
     timer.start();
   }
 };
 
 function stopTimer (){
   if(!stopBtn.classList.contains("lang-ctrls__btn--active")) {
-    buttons.map(btn => btn.classList.remove("lang-ctrls__btn--active"));
-    stopBtn.classList.add("lang-ctrls__btn--active");
     timer.stop();
   }
 };
 
+//подсветка активной кнопки
+function setActiveBtn(e) {
+  buttons.map(btn => btn.classList.remove("lang-ctrls__btn--active"));
+  let elem = e.target;
+  if (e.target.classList.contains("material-icons")) {
+    elem = elem.parentNode;
+  }
+  if (!elem.classList.contains("lang-ctrls__btn")) {
+    return false;
+  }
+  elem.classList.add("lang-ctrls__btn--active");
+};
+
 //слушатели
+controls.addEventListener("click", setActiveBtn);
 startBtn.addEventListener('click', startTimer);
 stopBtn.addEventListener('click', stopTimer);
 
