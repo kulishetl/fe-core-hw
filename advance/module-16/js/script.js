@@ -85,5 +85,6 @@ Filled with color: ${this.getColor()}`);
 
 const rect = new Rectangle("#009688", 10, 10, 100, 100);
 rect.draw();
+
 const circ = new Circle("#FF5722", 50, 50, 250);
 circ.draw();
