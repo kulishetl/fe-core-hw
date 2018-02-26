@@ -11,66 +11,85 @@
 const start = document.getElementById('start');
 const stop = document.getElementById('stop');
 const buttons = Array.from(document.querySelectorAll('button'));
+const controls = document.querySelector(".lang-ctrls__body");
 
 class Timer {
-  constructor(startTime = 0, stopTime = 0) {
-    this.startTime = startTime;
-    this.stopTime = stopTime;
-    this.interval = this.stopTime - this.startTime;
-  }
-  show () {
-    Object.keys(this).map(key => {
-    console.log(`${key}: ${this[key]}`);
-  });
-  }
-  start () {
-    this.startTime = new Date();
-  }
-  stop () {
-    this.stopTime = new Date();
-    this.interval = this.stopTime - this.startTime;
-  }
-  getTime () {
-    return console.log(`Прошло ${this.interval} ms`);
-  }
-  static timeToNY () {
-    const today = new Date();
-    const nextYear = today.getFullYear();
-    const endYear = new Date(nextYear, 11, 31, 23, 59, 59, 999);
-    const remainingTimeMillisecond = endYear.getTime() - today.getTime();
-    const days = parseInt(remainingTimeMillisecond/(1000*60*60*24));
-    return `До Нового Года осталось ${days} дней`;
-  }
+    constructor(startTime = 0, stopTime = 0) {
+        this.startTime = startTime;
+        this.stopTime = stopTime;
+        this.interval = this.stopTime - this.startTime;
+    }
+    //вывод свойств класса в консоль
+    show() {
+        Object.keys(this).map(key => {
+            console.log(`${key}: ${this[key]}`);
+        });
+    }
+    //метод для записи начального времени
+    start() {
+        this.startTime = new Date();
+    }
+    //метод для записи конечного времени и интервала
+    stop() {
+        this.stopTime = new Date();
+        this.interval = this.stopTime - this.startTime;
+    }
+    //вывод значения интервала в консоль
+    getTime() {
+        return console.log(`Прошло ${this.interval} ms`);
+    }
+    //метод подсчета дней до Нового Года
+    static timeToNY() {
+        const today = new Date();
+        const nextYear = today.getFullYear();
+        const endYear = new Date(nextYear, 11, 31, 23, 59, 59, 999);
+        const remainingTimeMillisecond = endYear.getTime() - today.getTime();
+        const days = parseInt(remainingTimeMillisecond / (1000 * 60 * 60 * 24));
+        return console.log(`До Нового Года осталось ${days} дней`);
+    }
 };
 
-console.log(Timer.timeToNY());
+Timer.timeToNY();
 
+//создание эксземпляров класса с различными значениями свойств
 const timer1 = new Timer(10, 20);
 const timer2 = new Timer(15, 18);
 const timer3 = new Timer(12, 45);
+//вывод значений свойств в консоль
 timer1.show();
 timer2.show();
 timer3.show();
 
-
 const stopwatch = new Timer();
 
-function startTimer () {
-  if(!start.classList.contains("lang-ctrls__btn--active")) {
-    buttons.map(btn => btn.classList.remove("lang-ctrls__btn--active"));
-    start.classList.add("lang-ctrls__btn--active");
-    stopwatch.start();
-  }
+//callback функции
+function startTimer() {
+    if (!start.classList.contains("lang-ctrls__btn--active")) {
+        stopwatch.start();
+    }
 };
 
-function stopTimer (){
-  if(!stop.classList.contains("lang-ctrls__btn--active")) {
-    buttons.map(btn => btn.classList.remove("lang-ctrls__btn--active"));
-    stop.classList.add("lang-ctrls__btn--active");
-    stopwatch.stop();
-    stopwatch.getTime();
-  }
+function stopTimer() {
+    if (!stop.classList.contains("lang-ctrls__btn--active")) {
+        stopwatch.stop();
+        stopwatch.getTime()
+    }
 };
 
+//подсветка активной кнопки
+function setActiveBtn(e) {
+    buttons.map(btn => btn.classList.remove("lang-ctrls__btn--active"));
+    let elem = e.target;
+    if (e.target.classList.contains("material-icons")) {
+        elem = elem.parentNode;
+    }
+    if (!elem.classList.contains("lang-ctrls__btn")) {
+        return false;
+    }
+    elem.classList.add("lang-ctrls__btn--active");
+};
+
+//слушатели
+controls.addEventListener("click", setActiveBtn);
 start.addEventListener('click', startTimer);
 stop.addEventListener('click', stopTimer);
