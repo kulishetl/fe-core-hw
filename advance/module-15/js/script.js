@@ -14,10 +14,10 @@ const buttons = Array.from(document.querySelectorAll('button'));
 const controls = document.querySelector(".lang-ctrls__body");
 
 class Timer {
-    constructor(startTime = 0, stopTime = 0) {
+    constructor(startTime = 0, stopTime = 0, interval = 0) {
         this.startTime = startTime;
         this.stopTime = stopTime;
-        this.interval = this.stopTime - this.startTime;
+        this.interval = interval;
     }
     //вывод свойств класса в консоль
     show() {
@@ -52,9 +52,9 @@ class Timer {
 Timer.timeToNY();
 
 //создание эксземпляров класса с различными значениями свойств
-const timer1 = new Timer(10, 20);
-const timer2 = new Timer(15, 18);
-const timer3 = new Timer(12, 45);
+const timer1 = new Timer(10, 20, 10);
+const timer2 = new Timer(15, 18, 3);
+const timer3 = new Timer(12, 45, 32);
 //вывод значений свойств в консоль
 timer1.show();
 timer2.show();
