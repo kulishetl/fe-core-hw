@@ -83,6 +83,7 @@ Filled with color: ${this.getColor()}`);
 	}
 }
 
+//создание экземпляров и вызов метода draw
 const rect = new Rectangle("#009688", 10, 10, 100, 100);
 rect.draw();
 
