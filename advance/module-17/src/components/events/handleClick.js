@@ -5,6 +5,7 @@ import stopTimer from '../timer/stopTimer';
 import updateTimer from '../timer/updateTimer';
 import trainer from '../timer/trainer';
 
+//переключение языка и сброс других параметров
 const handleClick = (evt) => {
     if(evt.target.classList.contains("keyboard__lng")) {
         if(!evt.target.classList.contains("keyboard__lng--active")) {
