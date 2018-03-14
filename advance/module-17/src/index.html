@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Homework-17</title>
+    </head>
+    <body>
+        <div id="timer-container">
+            <div>
+                <p class="top-speed">Лучший результат:</p>
+                <p class="top-result"></p>
+                <p class="current-speed">Текущий результат:</p>
+                <p class="current-result"></p>
+            </div>
+            <div>
+                <p class="string-to-print">Введите указанные символы:</p>
+                <p class="exercise"></p>
+                <p class="printed-letters">Введённые символы:</p>
+                <p class="text"></p>
+            </div>
+            <div>
+                <p class="time">Время:</p>
+                <p class="timer">00:00</p>
+                <p class="amount">Количество ошибок:</p> 
+                <p class="amount-err">0</p>
+            </div>
+        </div>
+        <div id="langs-container">
+            <ul class="lang-choise">
+                <% const langs= ["en", "ru", "ua"]; langs.map((lang, index) => { %>
+                <li class="keyboard__lng"><%- lang %></li>
+                <% }); %>
+            </ul>
+        </div>
+        <div id="keyboard-container">
+            <h1>You pressed: <span class="pressed"></span></h1>
+            <ul class="keyboard__row">
+                <% const topRow = ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "[", "]"]; topRow.map(btn => { %>
+                <li class="btn keyboard__btn"><%- btn %></li>
+                <% }); %>
+            </ul>
+            <ul class="keyboard__row">
+                <% const middleRow = ["a", "s", "d", "f", "g", "h", "j", "k", "l", ";", "'"]; middleRow.map(btn => { %>
+                <li class="btn keyboard__btn"><%- btn %></li>
+                <% }); %>
+            </ul>
+            <ul class="keyboard__row">
+                <% const bottomRow = ["z", "x", "c", "v", "b", "n", "m", ",", ".", "/"]; bottomRow.map(btn => { %>
+                <li class="btn keyboard__btn"><%- btn %></li>
+                <% }); %>
+            </ul>
+            <ul class="keyboard__row">
+                <li class="keyboard__btn keyboard__btn--space">space</li>
+            </ul>
+        </div>
+    </body>
+</html>
