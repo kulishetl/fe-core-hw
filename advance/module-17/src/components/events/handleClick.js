@@ -4,6 +4,7 @@ import fillExcercise from '../fillExcercise';
 import stopTimer from '../timer/stopTimer';
 import updateTimer from '../timer/updateTimer';
 import trainer from '../timer/trainer';
+import { zeroOut } from './pressedKey';
 
 //переключение языка и сброс других параметров
 const handleClick = (evt) => {
@@ -21,6 +22,7 @@ const handleClick = (evt) => {
             errors.textContent = trainer.err;
             txt.textContent = "";
             press.textContent = "";
+            zeroOut();
         }
     }
 }

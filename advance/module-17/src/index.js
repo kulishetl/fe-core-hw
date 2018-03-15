@@ -2,7 +2,7 @@ import 'styles.css';
 import handleClick from './components/events/handleClick';
 import keyClickDown from './components/events/keyClickDown';
 import keyClickUp from './components/events/keyClickUp';
-import pressedKey from './components/events/pressedKey';
+import { pressedKey } from './components/events/pressedKey';
 
 
 

@@ -31,4 +31,8 @@ function pressedKey (evt) {
     }
 }
 
-export default pressedKey;
+function zeroOut () {
+    i = 0;
+}
+
+export { pressedKey, zeroOut };
