@@ -10,5 +10,4 @@ function fillExcercise(lng) {
 }
 
 fillExcercise(lang.currentLang);
-export { charsArr };
-export default fillExcercise;
+export { charsArr, fillExcercise };

@@ -1,6 +1,6 @@
 import { keyLangs, keys, errors, txt, press } from '../elements';
 import lang from '../lang';
-import fillExcercise from '../fillExcercise';
+import { fillExcercise } from '../fillExcercise';
 import stopTimer from '../timer/stopTimer';
 import updateTimer from '../timer/updateTimer';
 import trainer from '../timer/trainer';
