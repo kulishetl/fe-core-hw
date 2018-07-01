@@ -25,7 +25,6 @@ const playSound = note => {
 };
 
 const buttons = Array.from(document.querySelectorAll("button"));
-
 const keys = "qwertyuiop[]asdfghjkl;'zxcvbnm,./".split("");
 const checkbox = document.getElementById("slideThree");
 const keyClickDown = (evt) => {
