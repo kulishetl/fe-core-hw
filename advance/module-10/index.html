@@ -15,37 +15,37 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
         <script type="tpl/lodash" id="timer-tpl">
             <div>
-                <p class="top-speed">Лучший результат:</p>
-                <p class="top-result"></p>
-                <p class="current-speed">Текущий результат:</p>
-                <p class="current-result"></p>
-            </div>
-            <div>
-                <p class="string-to-print">Введите указанные символы:</p>
-                <p class="exercise"></p>
-                <p class="printed-letters">Введённые символы:</p>
-                <p class="text"></p>
-            </div>
-            <div>
-                <p class="time">Время:</p>
-                <p class="timer">00:00</p>
-                <p class="amount">Количество ошибок:</p> 
-                <p class="amount-err">0</p>
-            </div>
-        </script>
+                    <p class="top-speed">Лучший результат:</p>
+                    <p class="top-result"></p>
+                    <p class="current-speed">Текущий результат:</p>
+                    <p class="current-result"></p>
+                </div>
+                <div>
+                    <p class="string-to-print">Введите указанные символы:</p>
+                    <p class="exercise"></p>
+                    <p class="printed-letters">Введённые символы:</p>
+                    <p class="text"></p>
+                </div>
+                <div>
+                    <p class="time">Время:</p>
+                    <p class="timer">00:00</p>
+                    <p class="amount">Количество ошибок:</p> 
+                    <p class="amount-err">0</p>
+                </div>
+            </script>
         <script type="tpl/lodash" id="keyboard-tpl">
             <h1>You pressed: <span class="pressed"></span></h1>
-            <% Object.keys(rows).forEach(key => { %>
-            <ul class="keyboard__row">
-                <% rows[key].forEach(btn => { %>    
-                <li class="keyboard__btn"><%- btn %></li>
+                <% Object.keys(rows).forEach(key => { %>
+                <ul class="keyboard__row">
+                    <% rows[key].forEach(btn => { %>    
+                    <li class="keyboard__btn"><%- btn %></li>
+                    <% }); %>
+                </ul>
                 <% }); %>
-            </ul>
-            <% }); %>
-            <ul class="keyboard__row">
-                <li class="keyboard__btn keyboard__btn--space">space</li>
-            </ul>
-        </script>
+                <ul class="keyboard__row">
+                    <li class="keyboard__btn keyboard__btn--space">space</li>
+                </ul>
+            </script>
         <script src="js/script.js"></script>
     </body>
 
